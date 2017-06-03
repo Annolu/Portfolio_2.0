@@ -7,6 +7,122 @@ html, body{
 
 body{
   font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  list-style: none;
+}
+
+.loader-overlayer{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color:black;
+  z-index: 14;
+  transition: all 200ms ease;
+  display: -webkit-flex;
+  -webkit-align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  &.hide-loader{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .loader-wrapper{
+    text-align: center;
+    width: 100%;
+    align-self: center;
+  }
+  .loader{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: white;
+    animation: rotateSpinner 800ms ease infinite;
+  }
+}
+
+.burger-container{
+  position: fixed!important;
+  display: inline-block;
+  top: 20px;
+  right: 20px;
+  transition: all 200ms ease-in-out;
+  z-index: 13;
+  background: url('../images/burguer-1.svg');
+  background-size: contain;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  z-index: 13;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-flex;
+  -webkit-align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  &.show-modal{
+    visibility: visible;
+    opacity: 1;
+    .modal-wrapper{
+      transform: none;
+    }
+  }
+  .modal-wrapper {
+    background-color: #fefefe;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+    position: relative;
+    transition: all 300ms ease;
+    align-self: center;
+    transform: translateY(500px);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: all 200ms ease;
+  &:hover, &:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+@keyframes rotateSpinner {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 .splash-page{
