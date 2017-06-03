@@ -1,8 +1,46 @@
 html, body{
   height: 100%;
   width: 100%;
+  margin:0;
+  padding:0;
 }
 
 body{
   font-family: 'Rubik', sans-serif;
+}
+
+.splash-page{
+  height:100%;
+  width:100%;
+  background-image: url('../images/yeezy.png');
+  background-size: cover;
+
+  color:white;
+  .splash-page-content{
+    padding:10% 15%;
+    font-weight: 300;
+    .subtitle{
+      color:rgba(255,255,255,.6);
+      font-size: .7rem;
+    }
+    .title{
+      font-size: 4rem;
+      line-height: 6rem;
+    }
+    a{
+      color:#787878;
+      text-decoration: none;
+      &:hover{
+        color:white;
+      }
+    }
+  }
+  .splash-page-footer{
+    color:rgba(255,255,255,.6);
+    font-size: .7rem;
+    position: absolute;
+    bottom: 6rem;
+    padding-left:15%;
+  }
+
 }
