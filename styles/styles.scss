@@ -10,6 +10,7 @@ body{
   margin: 0;
   padding: 0;
   position: relative;
+  font-weight: 300;
 }
 
 a{
@@ -19,6 +20,30 @@ a{
 
 ul{
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2{
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+
+h3{
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+.central-panel{
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .loader-overlayer{
@@ -125,6 +150,23 @@ ul{
   }
 }
 
+.top-menu{
+  position: fixed;
+  color: white;
+  width: 100%;
+  .menu-name{
+    padding: 15px;
+    display: inline-block;
+  }
+  ul{
+    float: right;
+  }
+  li{
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
 .splash-page{
   height:100%;
   width:100%;
@@ -134,7 +176,6 @@ ul{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   color:white;
   .splash-page-content{
     padding:220px 15% 0 15%;
@@ -247,5 +288,56 @@ ul{
       }
     }
   }
+}
 
+.projects-section{
+  color: white;
+  height: 200px;
+  background: #8f86de  ;
+  background: -moz-linear-gradient(top, #8f86de   0%, #6e4ada   100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #8f86de  ), color-stop(100%, #6e4ada  ));
+  background: -webkit-linear-gradient(top, #8f86de   0%, #6e4ada   100%);
+  background: -o-linear-gradient(top, #8f86de   0%, #6e4ada   100%);
+  background: -ms-linear-gradient(top, #8f86de   0%, #6e4ada   100%);
+  background: linear-gradient(to bottom, #8f86de   0%, #6e4ada   100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f86de', endColorstr='#6e4ada', GradientType=0 );
+}
+
+.awards-section{
+  padding-bottom: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #FFFFFF;
+  .skills-chart{
+    display: inline-block;
+    height: 400px;
+    width: 50%;
+    float: left;
+  }
+  .awards-wrapper{
+    float: right;
+    width: 45%;
+  }
+  p{
+    text-align: left;
+    margin: 35px 0;
+  }
+  &:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.experience-section{
+  background-color: #333;
+  color: white;
+}
+
+.contact-section{
+  @extend .projects-section ;
+  .copyright{
+    color: rgba(0,0,0,.6);
+  }
 }
