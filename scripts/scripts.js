@@ -80,4 +80,14 @@ $(document).ready(function() {
       }
     }
   });
+  // showMenu();
+  //
+  // $( window ).resize(function() {
+  //   showMenu();
+  // });
+  //
+  // function showMenu() {
+  //   if()
+  //   $('#burger').toggle('show-burger');
+  // }
 });

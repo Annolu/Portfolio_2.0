@@ -12,23 +12,38 @@ body {
   font-weight: 300; }
 
 a {
-  text-decoration: none;
-  color: white; }
+  text-decoration: none; }
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0; }
 
+h1 {
+  color: white;
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-bottom: 0;
+  font-weight: 300; }
+
 h2 {
   color: white;
   margin: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding-bottom: 0;
   font-weight: 300; }
 
 h3 {
+  text-transform: uppercase;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: .7rem;
+  line-height: 16px;
+  letter-spacing: 0.15em;
   font-weight: 300;
-  text-transform: capitalize;
-  margin: 0; }
+  padding: 15px 0; }
 
 p {
   margin: 0; }
@@ -76,7 +91,9 @@ p {
   background-size: contain;
   width: 50px;
   height: 40px;
-  cursor: pointer; }
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0; }
 
 .modal {
   position: fixed;
@@ -127,19 +144,29 @@ p {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
-
 .top-menu {
   position: fixed;
-  color: white;
-  width: 100%; }
+  width: 100%;
+  font-size: .7rem;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
+  .top-menu a {
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 200ms ease; }
+    .top-menu a:hover {
+      color: white; }
   .top-menu .menu-name {
-    padding: 15px;
+    margin: 15px;
     display: inline-block; }
   .top-menu ul {
     float: right; }
   .top-menu li {
     display: inline-block;
-    margin: 0 10px; }
+    padding: 15px; }
 
 .splash-page {
   height: 100%;
@@ -151,7 +178,7 @@ p {
   background-size: cover;
   color: white; }
   .splash-page .splash-page-content {
-    padding: 220px 15% 0 15%;
+    padding: 10% 15% 0 15%;
     font-weight: 300; }
     .splash-page .splash-page-content .subtitle {
       color: rgba(255, 255, 255, 0.6);
@@ -177,15 +204,9 @@ p {
     position: absolute;
     bottom: -150px;
     padding-left: 15%; }
-    .splash-page .splash-page-footer p {
-      color: rgba(255, 255, 255, 0.6);
-      font-size: .7rem;
-      line-height: 16px;
-      letter-spacing: 0.15em;
-      font-weight: 300; }
 
 .vertical-line {
-  background-color: white;
+  border-left: 1px dashed white;
   width: 1px;
   height: 200px;
   opacity: .5;
@@ -226,17 +247,19 @@ p {
   .splash-page .splash-page-content {
     padding: 100px 10%; }
   .splash-page .splash-page-footer {
-    padding-left: 10%; } }
+    padding-left: 10%; }
+
+  .burger-container {
+    opacity: 1;
+    visibility: visible; } }
 @media only screen and (max-width: 665px) {
   .splash-page .splash-page-content {
     padding: 50px 10%; }
     .splash-page .splash-page-content .title {
       font-size: 40px;
       line-height: 50px; } }
-
 .projects-section, .contact-section {
   color: white;
-  height: 200px;
   background: #8f86de;
   background: -moz-linear-gradient(top, #8f86de 0%, #6e4ada 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #8f86de), color-stop(100%, #6e4ada));
@@ -247,16 +270,12 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f86de', endColorstr='#6e4ada', GradientType=0 ); }
 
 .awards-section {
-  padding-bottom: 50px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
   background-color: #FFFFFF; }
+  .awards-section h3, .awards-section h2 {
+    color: black; }
   .awards-section .skills-chart {
     display: inline-block;
-    height: 400px;
-    width: 50%;
-    float: left; }
+    width: 50%; }
   .awards-section .awards-wrapper {
     float: right;
     width: 45%; }
@@ -274,5 +293,26 @@ p {
 
 .contact-section .copyright {
   color: rgba(0, 0, 0, 0.6); }
+.contact-section .social-media {
+  margin: 30px 0 70px 0; }
+  .contact-section .social-media li {
+    display: inline-block; }
+  .contact-section .social-media .social-icons {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+    display: block;
+    transition: all 300ms ease;
+    background-size: contain; }
+    .contact-section .social-media .social-icons:hover {
+      transform: translateY(-8px); }
+  .contact-section .social-media .twitter {
+    background-image: url("../images/social-icons/twitter-logo.svg"); }
+  .contact-section .social-media .github {
+    background-image: url("../images/social-icons/github-logo.svg"); }
+  .contact-section .social-media .linkedin {
+    background-image: url("../images/social-icons/linkedin-logo.svg"); }
+  .contact-section .social-media .soundcloud {
+    background-image: url("../images/social-icons/soundcloud-logo.svg"); }
 
 /*# sourceMappingURL=styles.css.map */
