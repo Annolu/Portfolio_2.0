@@ -50,11 +50,12 @@ h3{
   line-height: 16px;
   letter-spacing: 0.15em;
   font-weight: 300;
-  padding: 15px 0;
+  padding: 5px 0 15px 0;
 }
 
 p{
   margin: 0;
+  // font-size: 20px;
 }
 
 .central-panel{
@@ -302,6 +303,20 @@ p{
   background: linear-gradient(to bottom, #8f86de   0%, #6e4ada   100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f86de', endColorstr='#6e4ada', GradientType=0 );
 }
+.bold-paragraph{
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+.indeted-paragraph{
+  padding-left: 50px;
+}
+
+.lists{
+  li{
+    margin: 40px 0;
+  }
+}
 
 .awards-section{
   // padding-bottom: 50px;
@@ -318,14 +333,18 @@ p{
     width: 50%;
     // float: left;
   }
+  .polar-chart{
+    max-height: 400px;
+    max-width: 400px;
+  }
   .awards-wrapper{
     float: right;
     width: 45%;
   }
-  p{
-    text-align: left;
-    margin: 35px 0;
-  }
+  // p{
+  //   text-align: left;
+  //   margin: 35px 0;
+  // }
   &:after{
     content: '';
     clear: both;
