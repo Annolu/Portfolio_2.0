@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  setInterval(hideLoader, 200);
+  setInterval(hideLoader, 2000);
 
   function hideLoader(){
     var loader= $('.loader-overlayer');
@@ -144,4 +144,7 @@ $(document).ready(function() {
     owl.trigger('prev.owl.carousel', [300]);
   });
 
+  //scroll reveal
+  window.sr = ScrollReveal();
+  sr.reveal('.awards-wrapper', { origin: 'right', duration: 1000, distance: '60px' });
 });
