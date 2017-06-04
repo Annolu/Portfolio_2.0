@@ -515,6 +515,7 @@ p {
     font-size: .8rem; }
 
   .indeted-paragraph {
+    padding-left: 45px;
     font-size: .8rem; } }
 @media only screen and (max-width: 665px) {
   .splash-page .splash-page-content {
