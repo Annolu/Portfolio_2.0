@@ -42,7 +42,7 @@ $(document).ready(function() {
   $(window).click(function(e) {
 
     var target= $(e.target);
-    console.log(target);
+
     if(target.parents().hasClass("menu-overlayer") || target.hasClass("menu-overlayer")){
       toggleMenu();
     }
@@ -117,9 +117,9 @@ $(document).ready(function() {
     }
   });
 
-  // cds owl carousel
-  var owl = $("#owl-development");
-  owl.owlCarousel({
+  // development owl carousel
+  var owlDevelopment = $("#owl-development");
+  owlDevelopment.owlCarousel({
     items:2,
     loop:true,
     dots:false,
@@ -131,17 +131,35 @@ $(document).ready(function() {
       }
     }
   });
-  //owl carousel gets linked to the arrows
-  owl.owlCarousel();
-  // Go to the next item
-  $('.right-arrow').click(function() {
-    owl.trigger('next.owl.carousel');
+  owlDevelopment.owlCarousel();
+  $('.right-arrow-development').click(function() {
+    console.log('mierda')
+    owlDevelopment.trigger('next.owl.carousel');
   });
-  // Go to the previous item
-  $('.left-arrow').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
+  $('.left-arrow-development').click(function() {
+    owlDevelopment.trigger('prev.owl.carousel', [300]);
+  });
+
+  // design owl carousel
+  var owlDesign = $("#owl-design");
+  owlDesign.owlCarousel({
+    items:2,
+    loop:true,
+    dots:false,
+    autoWidth:true,
+    center:true,
+    responsive:{
+      600:{
+        items:2
+      }
+    }
+  });
+  owlDesign.owlCarousel();
+  $('.right-arrow-design').click(function() {
+    owlDesign.trigger('next.owl.carousel');
+  });
+  $('.left-arrow-design').click(function() {
+    owlDesign.trigger('prev.owl.carousel', [300]);
   });
 
   //scroll reveal
