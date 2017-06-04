@@ -412,6 +412,7 @@ p{
     position: relative;
     bottom: -50px;
     padding-left:15%;
+    z-index: 3;
   }
   .central-panel{
     padding-bottom: 0;
@@ -456,6 +457,9 @@ p{
   p{
     font-weight: 400;
     font-size: .8rem;
+  }
+  h1{
+    font-size: 24px;
   }
 }
 
@@ -567,12 +571,24 @@ p{
 
   .splash-page{
     .splash-page-content{
-      padding:50px 10%;
+      padding:50px 5%;
       .title{
         font-size: 40px;
         line-height: 50px;
       }
     }
+    .splash-page-footer{
+      padding-left:5%;
+    }
+  }
+  .experience-section{
+    .experience-section-footer{
+      padding-left:5%;
+    }
+  }
+
+  .central-panel {
+    width:90%;
   }
   .burger-container{
     opacity: .7;

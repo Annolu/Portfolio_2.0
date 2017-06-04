@@ -349,7 +349,8 @@ p {
   .experience-section .experience-section-footer {
     position: relative;
     bottom: -50px;
-    padding-left: 15%; }
+    padding-left: 15%;
+    z-index: 3; }
   .experience-section .central-panel {
     padding-bottom: 0; }
 
@@ -380,6 +381,8 @@ p {
 .contact-section p {
   font-weight: 400;
   font-size: .8rem; }
+.contact-section h1 {
+  font-size: 24px; }
 
 .arrow {
   height: 80px;
@@ -464,10 +467,18 @@ p {
     width: 80%; } }
 @media only screen and (max-width: 665px) {
   .splash-page .splash-page-content {
-    padding: 50px 10%; }
+    padding: 50px 5%; }
     .splash-page .splash-page-content .title {
       font-size: 40px;
       line-height: 50px; }
+  .splash-page .splash-page-footer {
+    padding-left: 5%; }
+
+  .experience-section .experience-section-footer {
+    padding-left: 5%; }
+
+  .central-panel {
+    width: 90%; }
 
   .burger-container {
     opacity: .7;

@@ -83,7 +83,6 @@ $(document).ready(function() {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
       {
-        label: "SKILLZ",
         backgroundColor: [
           'rgba(254, 230, 76, 0.8)'
         ],
@@ -101,7 +100,7 @@ $(document).ready(function() {
     data: data,
     options: {
       legend: {
-          position: "bottom"
+        display: false
       },
       scale: {
         ticks: {
