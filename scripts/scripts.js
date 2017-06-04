@@ -80,14 +80,31 @@ $(document).ready(function() {
       }
     }
   });
-  // showMenu();
-  //
-  // $( window ).resize(function() {
-  //   showMenu();
-  // });
-  //
-  // function showMenu() {
-  //   if()
-  //   $('#burger').toggle('show-burger');
-  // }
+
+  // cds owl carousel
+  var owl = $("#owl-development");
+  owl.owlCarousel({
+    items:2,
+    loop:true,
+    dots:false,
+    autoWidth:true,
+    center:true,
+    responsive:{
+      600:{
+        items:2
+      }
+    }
+  });
+  //owl carousel gets linked to the arrows
+  owl.owlCarousel();
+  // Go to the next item
+  $('.right-arrow').click(function() {
+    owl.trigger('next.owl.carousel');
+  });
+  // Go to the previous item
+  $('.left-arrow').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel', [300]);
+  });
 });
