@@ -42,8 +42,8 @@ $(document).ready(function() {
   $(window).click(function(e) {
 
     var target= $(e.target);
-
-    if(target.parents().hasClass("menu-item") || target.hasClass("menu-overlayer")){
+    console.log(target);
+    if(target.parents().hasClass("menu-overlayer") || target.hasClass("menu-overlayer")){
       toggleMenu();
     }
 

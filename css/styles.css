@@ -207,7 +207,7 @@ p {
   font-weight: 300;
   margin-bottom: 20px;
   text-transform: uppercase;
-  z-index: 1; }
+  z-index: 2; }
   .top-menu a {
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -265,7 +265,7 @@ p {
   border-left: 1px dashed white;
   width: 1px;
   height: 100px;
-  opacity: .5;
+  opacity: 0.5;
   display: inline-block; }
 
 .sliding-url {
@@ -320,11 +320,12 @@ p {
 
 .lists li {
   margin-top: 45px; }
-.lists li:nth-child(1) {
-  margin-top: 10px; }
+  .lists li:nth-child(1) {
+    margin-top: 10px; }
 
 .awards-section {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  padding-bottom: 30px; }
   .awards-section h3, .awards-section h2 {
     color: black; }
   .awards-section .skills-chart {

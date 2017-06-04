@@ -15,7 +15,6 @@ body{
 
 a{
   text-decoration: none;
-  // color: white;
 }
 
 ul{
@@ -236,7 +235,7 @@ p{
   font-weight: 300;
   margin-bottom: 20px;
   text-transform: uppercase;
-  z-index: 1;
+  z-index: 2;
   a{
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -261,7 +260,6 @@ p{
 .splash-page{
   height:100%;
   width:100%;
-
   background-image: url('../images/yeezy.png');
   background-attachment: fixed;
   background-position: center;
@@ -308,7 +306,7 @@ p{
   border-left: 1px dashed white;
   width: 1px;
   height: 100px;
-  opacity: .5;
+  opacity: 0.5;
   display: inline-block;
 }
 
@@ -375,14 +373,15 @@ p{
 .lists{
   li{
     margin-top: 45px;
-  }
-  li:nth-child(1){
-    margin-top: 10px;
+    &:nth-child(1){
+      margin-top: 10px;
+    }
   }
 }
 
 .awards-section{
   background-color: #FFFFFF;
+  padding-bottom: 30px;
   h3,h2{
     color: black;
   }
@@ -398,10 +397,6 @@ p{
     float: right;
     width: 45%;
   }
-  // p{
-  //   text-align: left;
-  //   margin: 35px 0;
-  // }
   &:after{
     content: '';
     clear: both;
