@@ -58,6 +58,10 @@ p{
   // font-size: 20px;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 .central-panel{
   width: 70%;
   margin: 0 auto;
@@ -170,6 +174,59 @@ p{
   }
 }
 
+.menu-overlayer{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 11;
+  transition: all 200ms ease;
+  display: -webkit-flex;
+  -webkit-align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
+  .menu-item-wrapper{
+    align-self: center;
+    width: 100%;
+  }
+  h3{
+    padding: 0;
+    font-size: .8rem;
+  }
+  li{
+    transform: rotateX(90deg);
+    @for $i from 1 through 4{
+      &.item-#{$i}{
+        transition: all 200ms linear;
+        transition-delay: $i * 100ms;
+      }
+    }
+  }
+  .menu-item{
+    display: block;
+    background-color: #8F86DE;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease;
+    text-transform: uppercase;
+    &:hover{
+      background-color: darken(#8F86DE, 5%);
+    }
+  }
+  &.open{
+    background-color: rgba(0,0,0,.8);
+    opacity: 1;
+    visibility: visible;
+    li{
+      transform: rotateX(0deg);
+    }
+  }
+}
+
 .top-menu{
   position: fixed;
   width: 100%;
@@ -179,6 +236,7 @@ p{
   font-weight: 300;
   margin-bottom: 20px;
   text-transform: uppercase;
+  z-index: 1;
   a{
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -311,12 +369,15 @@ p{
 }
 
 .indeted-paragraph{
-  padding-left: 50px;
+  padding-left: 52px;
 }
 
 .lists{
   li{
-    margin: 40px 0;
+    margin-top: 45px;
+  }
+  li:nth-child(1){
+    margin-top: 10px;
   }
 }
 
@@ -327,9 +388,7 @@ p{
   }
   .skills-chart{
     display: inline-block;
-    // height: 400px;
     width: 50%;
-    // float: left;
   }
   .polar-chart{
     max-height: 400px;
@@ -358,6 +417,9 @@ p{
     position: relative;
     bottom: -50px;
     padding-left:15%;
+  }
+  .central-panel{
+    padding-bottom: 0;
   }
 }
 
@@ -507,6 +569,7 @@ p{
 }
 
 @media only screen and (max-width: 665px) {
+
   .splash-page{
     .splash-page-content{
       padding:50px 10%;
@@ -526,6 +589,12 @@ p{
   .top-menu {
     ul {
       display:none;
+    }
+  }
+  .awards-section{
+    .sections{
+      width: 100%;
+      float: none;
     }
   }
 }

@@ -7,6 +7,8 @@ $(document).ready(function() {
     loader.addClass('hide-loader');
   }
 
+  ////Modal/////
+
   var modal = $('#myModal');
   var modalButton = $(".modalButton");
   var span = $(".close");
@@ -20,18 +22,37 @@ $(document).ready(function() {
     modal.removeClass('show-modal');
   });
 
+  ////Mobile version menu/////
+
+  var burger= $('#burger');
+  burger.click(toggleMenu)
+
+  function toggleMenu() {
+    $('body').toggleClass('no-scroll')
+    $('.menu-overlayer').toggleClass('open');
+  }
+
+  $(window).resize(function() {
+    if($(window).width() > 680){
+      $('body').removeClass('no-scroll')
+      $('.menu-overlayer').removeClass('open');
+    }
+  });
+
   $(window).click(function(e) {
 
     var target= $(e.target);
 
-    if(target.hasClass("menu-item") || target.hasClass("menu-overlayer")){
-      toggleOverlayer(target);
+    if(target.parents().hasClass("menu-item") || target.hasClass("menu-overlayer")){
+      toggleMenu();
     }
 
-    if (e.target == modal[0]) {
+    if(e.target == modal[0]) {
       modal.removeClass('show-modal');
     }
   })
+
+  ////Fill modal/////
 
   function fillModal(e){
     var originalModalInfo= e.target.parentNode.parentNode.parentNode;
@@ -39,6 +60,22 @@ $(document).ready(function() {
     $(".modal-content").empty();
     $(".modal-content").append(modalInfo);
   }
+
+  ////Smooth scroll to internal links/////
+
+  $('a[href^="#"]').on('click', function(event) {
+  var target = $(this.getAttribute('href'));
+
+  if(target.length) {
+    event.preventDefault();
+
+    $('body, html').stop().animate({
+      scrollTop: target[0].offsetTop
+    }, 900);
+  }
+});
+
+  ////Chart////
 
   var ctxA = document.getElementById("augusto-chart");
 
@@ -107,4 +144,5 @@ $(document).ready(function() {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
   });
+
 });
