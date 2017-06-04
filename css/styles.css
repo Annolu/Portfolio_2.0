@@ -246,7 +246,8 @@ p {
   font-weight: 300;
   margin-bottom: 20px;
   text-transform: uppercase;
-  z-index: 2; }
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2); }
   .top-menu a {
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -377,7 +378,8 @@ p {
     width: 50%; }
   .awards-section .polar-chart {
     max-height: 400px;
-    max-width: 400px; }
+    max-width: 400px;
+    margin: 0 auto 40px auto; }
   .awards-section .awards-wrapper {
     float: right;
     width: 45%; }
