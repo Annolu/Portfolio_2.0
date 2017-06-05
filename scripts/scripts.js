@@ -99,12 +99,8 @@ $(document).ready(function() {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
       {
-        backgroundColor: [
-          'rgba(254, 230, 76, 0.8)'
-        ],
-        borderColor: [
-          'rgba(254, 230, 76, 1)'
-        ],
+        backgroundColor: 'rgba(254, 230, 76, 0.8)',
+        borderColor: 'rgba(254, 230, 76, 1)',
         borderWidth: 1,
         data: [6, 9, 7, 8, 7, 6, 7],
       }
