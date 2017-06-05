@@ -119,9 +119,9 @@ p {
     opacity: .3;
     transform: scale(0.8) translateY(0px); } }
 .burger-container {
-  position: fixed !important;
+  position: absolute;
   display: inline-block;
-  top: 10px;
+  top: 7px;
   right: 10px;
   transition: all 200ms ease-in-out;
   z-index: 13;
@@ -247,7 +247,11 @@ p {
   margin-bottom: 20px;
   text-transform: uppercase;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.8);
+  top: -46px;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: -moz-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1); }
   .top-menu a {
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -262,6 +266,12 @@ p {
   .top-menu li {
     display: inline-block;
     padding: 15px; }
+  .top-menu.hidden {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%); }
 
 .splash-page {
   height: 100%;
@@ -297,9 +307,13 @@ p {
         color: white; }
   .splash-page .splash-page-footer {
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     padding-left: 15%;
-    z-index: 3; }
+    z-index: 3;
+    transition: all 700ms ease; }
+    .splash-page .splash-page-footer:hover {
+      cursor: pointer;
+      transform: translate(10px, -30px); }
 
 .vertical-line {
   border-left: 1px dashed white;
@@ -396,13 +410,17 @@ p {
     position: relative;
     bottom: -50px;
     padding-left: 15%;
-    z-index: 3; }
+    z-index: 3;
+    transition: all 700ms ease;
+    max-width: 200px; }
+    .experience-section .experience-section-footer:hover {
+      cursor: pointer;
+      transform: translate(10px, -30px); }
   .experience-section .central-panel {
     padding-bottom: 0; }
 
 .contact-section .copyright {
-  color: rgba(0, 0, 0, 0.6);
-  padding-bottom: 30px; }
+  color: rgba(0, 0, 0, 0.6); }
 .contact-section .social-media {
   margin: 30px 0 70px 0; }
   .contact-section .social-media li {

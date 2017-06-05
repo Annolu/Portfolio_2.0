@@ -1,11 +1,21 @@
 $(document).ready(function() {
 
-  setInterval(hideLoader, 2000);
+  //setInterval(hideLoader, 2000);
+  var prev = 0;
+  var $window = $(window);
+  var nav = $('.top-menu');
+
+  $window.on('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    nav.toggleClass('hidden', scrollTop < prev);
+    prev = scrollTop;
+  });
 
   function hideLoader(){
     var loader= $('.loader-overlayer');
     loader.addClass('hide-loader');
   }
+  hideLoader();
 
   ////Modal/////
 
@@ -163,6 +173,21 @@ $(document).ready(function() {
   });
 
   //scroll reveal
-  window.sr = ScrollReveal();
-  sr.reveal('.awards-wrapper', { origin: 'right', duration: 1000, distance: '60px' });
+  window.sr = ScrollReveal({
+    mobile: true,
+    reset: false,
+    distance: '100px',
+    duration: 800,
+    easing: 'ease-out',
+    scale: 1
+  });
+  sr.reveal('.subtitle',{origin:'top'});
+  sr.reveal('.title',{delay: 300});
+  sr.reveal('.development-section');
+  sr.reveal('.design-section');
+  sr.reveal('#augusto-chart');
+  sr.reveal('.awards-wrapper',{delay: 300});
+  sr.reveal('.experience-titles');
+  sr.reveal('.experience-wrapper',{delay: 300});
+  sr.reveal('.social-media');
 });
