@@ -342,11 +342,7 @@ p{
     bottom: -40px;
     padding-left:15%;
     z-index: 3;
-    transition: all 700ms ease;
-    &:hover{
-      cursor: pointer;
-      transform: translate(10px,-30px);
-    }
+
   }
 }
 
@@ -469,12 +465,7 @@ p{
     bottom: -50px;
     padding-left:15%;
     z-index: 3;
-    transition: all 700ms ease;
     max-width: 200px;
-    &:hover{
-      cursor: pointer;
-      transform: translate(10px,-30px);
-    }
   }
   .central-panel{
     padding-bottom: 0;
