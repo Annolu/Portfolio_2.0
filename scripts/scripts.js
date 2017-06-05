@@ -126,8 +126,10 @@ $(document).ready(function() {
           stepSize: 2
         },
         pointLabels: {
-          fontSize: 14,
-          fontColor: '797878'
+          fontSize: 12,
+          fontFamily:'Rubik',
+          fontStyle : '300',
+          fontColor: 'rgba(0,0,0,.7)'
         }
       }
     }
@@ -190,13 +192,12 @@ $(document).ready(function() {
   sr.reveal('.subtitle');
   sr.reveal('.title',{origin:'top'});
   sr.reveal('.splash-page-footer',{distance: '50px',origin:'right',reset: true,delay: 300});
-
   sr.reveal('.development-section');
   sr.reveal('.design-section');
   sr.reveal('#augusto-chart');
-  sr.reveal('.awards-wrapper',{delay: 300});
-  sr.reveal('.experience-titles');
-  sr.reveal('.experience-wrapper');
+  //sr.reveal('.awards-wrapper',{delay: 300});
+  //sr.reveal('.experience-titles');
+  //sr.reveal('.experience-wrapper');
   sr.reveal('.experience-section-footer',{distance: '50px',origin:'right',reset: true});
-  sr.reveal('.social-media');
+  //sr.reveal('.social-media');
 });

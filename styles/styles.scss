@@ -411,13 +411,14 @@ p{
   }
 }
 .bold-paragraph{
-  font-weight: 500;
+  font-weight: 400;
   margin: 0 0 5px 0;
   font-size: 1rem;
+  letter-spacing: 2px;
 }
 
 .indeted-paragraph{
-  padding-left: 52px;
+  padding-left: 65px;
   font-size: 1rem;
 }
 
@@ -454,6 +455,9 @@ p{
     clear: both;
     display: table;
   }
+  .indeted-paragraph{
+    color:rgba(0,0,0,.6);
+  }
 }
 
 .experience-section{
@@ -469,6 +473,9 @@ p{
   }
   .central-panel{
     padding-bottom: 0;
+  }
+  .indeted-paragraph{
+    color:rgba(255,255,255,.6);
   }
 }
 
@@ -512,8 +519,13 @@ p{
     font-weight: 400;
     font-size: .8rem;
   }
-  h1{
+  a{
     font-size: 24px;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+    font-weight: 300;
   }
 }
 
@@ -625,7 +637,7 @@ p{
   }
 
   .indeted-paragraph{
-    padding-left: 45px;
+    padding-left: 55px;
     font-size: .8rem;
   }
 }
