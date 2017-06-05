@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  //setInterval(hideLoader, 2000);
+  //setTimeout(hideLoader, 2000);
   var prev = 0;
   var $window = $(window);
   var nav = $('.top-menu');
@@ -8,6 +8,9 @@ $(document).ready(function() {
   $window.on('scroll', function(){
     var scrollTop = $window.scrollTop();
     nav.toggleClass('hidden', scrollTop < prev);
+    if(scrollTop==0){
+      nav.removeClass('hidden');
+    }
     prev = scrollTop;
   });
 
@@ -181,13 +184,13 @@ $(document).ready(function() {
     easing: 'ease-out',
     scale: 1
   });
-  sr.reveal('.subtitle',{origin:'top'});
-  sr.reveal('.title',{delay: 300});
+  sr.reveal('.subtitle');
+  sr.reveal('.title',{origin:'top'});
   sr.reveal('.development-section');
   sr.reveal('.design-section');
-  sr.reveal('#augusto-chart');
-  sr.reveal('.awards-wrapper',{delay: 300});
+  sr.reveal('#augusto-chart',{delay: 300});
+  sr.reveal('.awards-wrapper',{delay: 600});
   sr.reveal('.experience-titles');
   sr.reveal('.experience-wrapper',{delay: 300});
-  sr.reveal('.social-media');
+  sr.reveal('.social-media',{delay: 600});
 });
