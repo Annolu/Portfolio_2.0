@@ -186,7 +186,7 @@ $(document).ready(function() {
   });
   sr.reveal('.subtitle');
   sr.reveal('.title',{origin:'top'});
-  sr.reveal('.splash-page-footer',{distance: '50px',origin:'right',reset: true});
+  sr.reveal('.splash-page-footer',{distance: '50px',origin:'right',reset: true,delay: 300});
 
   sr.reveal('.development-section');
   sr.reveal('.design-section');
