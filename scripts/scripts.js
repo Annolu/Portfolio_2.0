@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-  //setTimeout(hideLoader, 2000);
+
+
+  //// hide/show top-menu on scroll
   var prev = 0;
   var $window = $(window);
   var nav = $('.top-menu');
@@ -14,11 +16,12 @@ $(document).ready(function() {
     prev = scrollTop;
   });
 
+  hideLoader();
+  //setTimeout(hideLoader, 2000);
   function hideLoader(){
     var loader= $('.loader-overlayer');
     loader.addClass('hide-loader');
   }
-  hideLoader();
 
   ////Modal/////
 
