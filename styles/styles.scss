@@ -64,7 +64,7 @@ p{
 .central-panel{
   width: 70%;
   margin: 0 auto;
-  padding: 50px 0 0 0;
+  padding: 45px 0 0 0;
 }
 
 .loader-overlayer{
@@ -339,7 +339,7 @@ p{
   }
   .splash-page-footer{
     position: absolute;
-    bottom: -40px;
+    bottom: -35px;
     padding-left:15%;
     z-index: 3;
 
@@ -349,7 +349,7 @@ p{
 .vertical-line{
   border-left: 1px dashed white;
   width: 1px;
-  height: 100px;
+  height: 80px;
   opacity: 0.5;
   display: inline-block;
 }
@@ -396,7 +396,7 @@ p{
 .projects-section{
   position: relative;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   background: #8f86de;
   background: -moz-linear-gradient(top, #8f86de   0%, #6e4ada   100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #8f86de  ), color-stop(100%, #6e4ada  ));
@@ -424,7 +424,7 @@ p{
 
 .lists{
   li{
-    margin-top: 45px;
+    margin-top: 35px;
     &:nth-child(1){
       margin-top: 10px;
     }
@@ -433,7 +433,7 @@ p{
 
 .awards-section{
   background-color: #FFFFFF;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   h3,h2{
     color: black;
   }
@@ -466,7 +466,7 @@ p{
   position: relative;
   .experience-section-footer{
     position: relative;
-    bottom: -50px;
+    bottom: -38px;
     padding-left:15%;
     z-index: 3;
     max-width: 200px;
@@ -481,6 +481,7 @@ p{
 
 .contact-section{
   @extend .projects-section ;
+  padding-bottom: 40px;
   .copyright{
     color: rgba(0,0,0,.6);
   }
@@ -628,7 +629,12 @@ p{
       padding-left:10%;
     }
   }
-
+  .awards-section{
+    .sections{
+      width: 100%;
+      float: none;
+    }
+  }
   .central-panel {
     width:80%;
   }
@@ -677,12 +683,7 @@ p{
       display:none;
     }
   }
-  .awards-section{
-    .sections{
-      width: 100%;
-      float: none;
-    }
-  }
+
   .project-item {
     width: 300px;
   }

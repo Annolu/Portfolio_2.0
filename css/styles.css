@@ -54,7 +54,7 @@ p {
 .central-panel {
   width: 70%;
   margin: 0 auto;
-  padding: 50px 0 0 0; }
+  padding: 45px 0 0 0; }
 
 .loader-overlayer {
   position: fixed;
@@ -307,14 +307,14 @@ p {
         color: white; }
   .splash-page .splash-page-footer {
     position: absolute;
-    bottom: -40px;
+    bottom: -35px;
     padding-left: 15%;
     z-index: 3; }
 
 .vertical-line {
   border-left: 1px dashed white;
   width: 1px;
-  height: 100px;
+  height: 80px;
   opacity: 0.5;
   display: inline-block; }
 
@@ -352,7 +352,7 @@ p {
 .projects-section, .contact-section {
   position: relative;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   background: #8f86de;
   background: -moz-linear-gradient(top, #8f86de 0%, #6e4ada 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #8f86de), color-stop(100%, #6e4ada));
@@ -375,13 +375,13 @@ p {
   font-size: 1rem; }
 
 .lists li {
-  margin-top: 45px; }
+  margin-top: 35px; }
   .lists li:nth-child(1) {
     margin-top: 10px; }
 
 .awards-section {
   background-color: #FFFFFF;
-  padding-bottom: 30px; }
+  padding-bottom: 50px; }
   .awards-section h3, .awards-section h2 {
     color: black; }
   .awards-section .skills-chart {
@@ -407,7 +407,7 @@ p {
   position: relative; }
   .experience-section .experience-section-footer {
     position: relative;
-    bottom: -50px;
+    bottom: -38px;
     padding-left: 15%;
     z-index: 3;
     max-width: 200px; }
@@ -416,41 +416,43 @@ p {
   .experience-section .indeted-paragraph {
     color: rgba(255, 255, 255, 0.6); }
 
-.contact-section .copyright {
-  color: rgba(0, 0, 0, 0.6); }
-.contact-section .social-media {
-  margin: 30px 0 70px 0; }
-  .contact-section .social-media li {
-    display: inline-block; }
-  .contact-section .social-media .social-icons {
-    width: 30px;
-    height: 30px;
-    margin: 0 20px 0 0;
-    display: block;
-    transition: all 300ms ease;
-    background-size: contain; }
-    .contact-section .social-media .social-icons:hover {
-      transform: translateY(-8px); }
-  .contact-section .social-media .twitter {
-    background-image: url("../images/social-icons/twitter-logo.svg"); }
-  .contact-section .social-media .github {
-    background-image: url("../images/social-icons/github-logo.svg");
-    width: 28px;
-    height: 28px; }
-  .contact-section .social-media .linkedin {
-    background-image: url("../images/social-icons/linkedin-logo.svg"); }
-  .contact-section .social-media .soundcloud {
-    background-image: url("../images/social-icons/soundcloud-logo.svg"); }
-.contact-section p {
-  font-weight: 400;
-  font-size: .8rem; }
-.contact-section a {
-  font-size: 24px;
-  color: white;
-  margin: 0;
-  letter-spacing: 2px;
-  padding-bottom: 0;
-  font-weight: 300; }
+.contact-section {
+  padding-bottom: 40px; }
+  .contact-section .copyright {
+    color: rgba(0, 0, 0, 0.6); }
+  .contact-section .social-media {
+    margin: 30px 0 70px 0; }
+    .contact-section .social-media li {
+      display: inline-block; }
+    .contact-section .social-media .social-icons {
+      width: 30px;
+      height: 30px;
+      margin: 0 20px 0 0;
+      display: block;
+      transition: all 300ms ease;
+      background-size: contain; }
+      .contact-section .social-media .social-icons:hover {
+        transform: translateY(-8px); }
+    .contact-section .social-media .twitter {
+      background-image: url("../images/social-icons/twitter-logo.svg"); }
+    .contact-section .social-media .github {
+      background-image: url("../images/social-icons/github-logo.svg");
+      width: 28px;
+      height: 28px; }
+    .contact-section .social-media .linkedin {
+      background-image: url("../images/social-icons/linkedin-logo.svg"); }
+    .contact-section .social-media .soundcloud {
+      background-image: url("../images/social-icons/soundcloud-logo.svg"); }
+  .contact-section p {
+    font-weight: 400;
+    font-size: .8rem; }
+  .contact-section a {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+    font-weight: 300; }
 
 .arrow {
   height: 70px;
@@ -532,6 +534,10 @@ p {
   .experience-section .experience-section-footer {
     padding-left: 10%; }
 
+  .awards-section .sections {
+    width: 100%;
+    float: none; }
+
   .central-panel {
     width: 80%; }
 
@@ -564,10 +570,6 @@ p {
 
   .top-menu ul {
     display: none; }
-
-  .awards-section .sections {
-    width: 100%;
-    float: none; }
 
   .project-item {
     width: 300px; }

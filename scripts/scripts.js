@@ -92,43 +92,46 @@ $(document).ready(function() {
 });
 
   ////Chart////
-
   var ctxA = document.getElementById("augusto-chart");
 
   var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["January", "February", "March", "April", "May", "June"],
     datasets: [
       {
-        backgroundColor: 'rgba(254, 230, 76, 0.8)',
-        borderColor: 'rgba(254, 230, 76, 1)',
+        backgroundColor: 'rgba(254, 230, 76, 0.7)',
+        borderColor:'rgba(254, 230, 76, 1)',
         borderWidth: 1,
-        data: [6, 9, 7, 8, 7, 6, 7],
+        lineTension:.1,
+        pointBackgroundColor: 'white',
+        pointBorderWidth:1,
+        pointHoverBorderWidth:1,
+        data: [9.5, 9, 7, 8, 7, 6]
       }
     ]
   };
 
+  var options = {
+    legend: {display: false},
+    scale: {
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 10,
+        stepSize: 2
+      },
+      pointLabels: {
+        fontSize: 12,
+        fontFamily:'Rubik',
+        fontStyle : '300',
+        fontColor: 'rgba(0,0,0,.7)'
+      }
+    }
+  }
+
   var chartAugusto = new Chart(ctxA, {
     type: 'radar',
     data: data,
-    options: {
-      legend: {
-        display: false
-      },
-      scale: {
-        ticks: {
-          beginAtZero: true,
-          min: 0,
-          max: 10,
-          stepSize: 2
-        },
-        pointLabels: {
-          fontSize: 12,
-          fontFamily:'Rubik',
-          fontStyle : '300',
-          fontColor: 'rgba(0,0,0,.7)'
-        }
-      }
-    }
+    options: options
   });
 
   // development owl carousel
@@ -145,6 +148,8 @@ $(document).ready(function() {
       }
     }
   });
+
+  //arrows controls
   owlDevelopment.owlCarousel();
   $('.right-arrow-development').click(function() {
     console.log('mierda')
@@ -168,6 +173,8 @@ $(document).ready(function() {
       }
     }
   });
+
+  //arrows controls
   owlDesign.owlCarousel();
   $('.right-arrow-design').click(function() {
     owlDesign.trigger('next.owl.carousel');
@@ -180,20 +187,17 @@ $(document).ready(function() {
   window.sr = ScrollReveal({
     mobile: true,
     reset: false,
-    distance: '100px',
+    distance: '50px',
     duration: 800,
     easing: 'ease-out',
     scale: 1
   });
-  sr.reveal('.subtitle');
-  sr.reveal('.title',{origin:'top'});
-  sr.reveal('.splash-page-footer',{distance: '50px',origin:'right',reset: true,delay: 300});
-  sr.reveal('.development-section');
-  sr.reveal('.design-section');
+  //callbacks
+  sr.reveal('.subtitle',{duration: 500, origin:'top'});
+  sr.reveal('.title',{delay: 500});
+  sr.reveal('.splash-page-footer',{origin:'right',reset: true});
+  sr.reveal('.development-section',{distance: '100px'});
+  sr.reveal('.design-section',{distance: '100px'});
   sr.reveal('#augusto-chart');
-  //sr.reveal('.awards-wrapper',{delay: 300});
-  //sr.reveal('.experience-titles');
-  //sr.reveal('.experience-wrapper');
   sr.reveal('.experience-section-footer',{distance: '50px',origin:'right',reset: true});
-  //sr.reveal('.social-media');
 });
