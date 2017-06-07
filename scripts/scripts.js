@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
 
   hideLoader();
-  
+
   function hideLoader(){
     var loader= $('.loader-overlayer');
     loader.addClass('hide-loader');
@@ -33,6 +33,7 @@ $(document).ready(function() {
       $('.body-wrapper').addClass('scale-body-wrapper');
       $('body').addClass('no-scroll');
       showModal= true;
+      nav.removeClass('hidden');
     // fillModal(e);
   });
 
