@@ -95,7 +95,7 @@ $(document).ready(function() {
   var ctxA = document.getElementById("augusto-chart");
 
   var data = {
-    labels: ["VANILLA JS", "CSS3", "HTML5", "UX/UI", "REDUX", "REACT"],
+    labels: ["JS/ES6", "CSS3", "HTML5", "UX","UI", "REDUX", "REACT"],
     datasets: [
       {
         backgroundColor: 'rgba(254, 230, 76, 0.7)',
@@ -105,7 +105,7 @@ $(document).ready(function() {
         pointBackgroundColor: 'white',
         pointBorderWidth:1,
         pointHoverBorderWidth:1,
-        data: [8, 9, 8, 9, 6, 7.5]
+        data: [8.5, 9.5, 9.5, 8, 9.5, 5, 7.5]
       }
     ]
   };
