@@ -14,7 +14,8 @@ $(document).ready(function() {
     prev = scrollTop;
   });
 
-  setTimeout(hideLoader, 2000);
+  hideLoader();
+  
   function hideLoader(){
     var loader= $('.loader-overlayer');
     loader.addClass('hide-loader');

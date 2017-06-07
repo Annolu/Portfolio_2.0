@@ -82,7 +82,7 @@ p{
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color:black;
+  background-color: #201F1F;
   z-index: 14;
   transition: all 200ms ease;
   display: -webkit-flex;
@@ -97,42 +97,48 @@ p{
     text-align: center;
     width: 100%;
     align-self: center;
+    position: relative;
+    margin: 0 auto;
+    height: 65px;
+    width: 65px;
   }
   .loader{
     display: inline-block;
-    position: relative;
-    color: white;
-    opacity: 0;
-    text-transform: uppercase;
+    position: absolute;
     margin: 0;
-    color:rgba(255,255,255,.6);
-    font-size: .7rem;
-    line-height: 16px;
-    letter-spacing: 0.15em;
-    font-weight: 300;
-    @for $i from 1 through 7{
-      &.letter-#{$i}{
-        animation: pulseLetter 2000ms ease-in-out infinite;
-        animation-delay: $i * 200ms;
-      }
+    border-radius: 50%;
+    &.circle-1{
+      animation: rotateSpinner 1.3s linear infinite reverse;
+      border: 4px solid #7262b9;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      height: 53px;
+      width: 53px;
+      left: 15px;
+      top: 12px;
+    }
+    &.circle-2{
+      animation: rotateSpinner 1.6s linear 200ms infinite;
+      height: 65px;
+      width: 65px;
+      left: 12px;
+      top: 9px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-left-color: transparent;
+      border-bottom-color: transparent;
     }
   }
 }
 
-@keyframes pulseLetter {
+@keyframes rotateSpinner {
   0%{
-    opacity: .3;
-    transform: scale(.8) translateY(0px);
-  }
-  50%{
-    opacity: 1;
-    transform: scale(1) translateY(-10px);
+    transform: rotate(0);
   }
   100%{
-    opacity: .3;
-    transform: scale(.8) translateY(0px);
+    transform: rotate(360deg);
   }
 }
+
 
 .burger-container{
   position: absolute;
