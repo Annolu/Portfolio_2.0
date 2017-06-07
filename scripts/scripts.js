@@ -58,7 +58,6 @@ $(document).ready(function() {
     });
   }
 
-
   const createDesignerSection = (data) =>{
     let designs = data.designs.map((item) => {
       return ('<div class="project-item">' +
@@ -155,7 +154,7 @@ $(document).ready(function() {
 
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
-
+    toggleMenu();
     if(target.length) {
       event.preventDefault();
 
