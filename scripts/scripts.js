@@ -97,7 +97,7 @@ $(document).ready(function() {
   const setModal = () => {
     var modal = $('#myModal');
     var modalButton = $(".modalButton");
-    var span = $(".close-modal");
+    var closeModalButton = $(".close-modal");
     var showModal= false;
 
     modalButton.click(function(e) {
@@ -109,14 +109,21 @@ $(document).ready(function() {
       // fillModal(e);
     });
 
-    span.click(function() {
+    $('.footer-link').click(function() {
+      closeModal();
+    });
+
+    closeModalButton.click(function() {
+      closeModal();
+    });
+
+    function closeModal() {
       modal.removeClass('show-modal');
       setTimeout(function(){$('.body-wrapper').removeClass('scale-body-wrapper')}, 0);
       $('body').removeClass('no-scroll');
       showModal= false;
-    });
+    }
   }
-
 
   ////Mobile version menu/////
 
@@ -134,20 +141,6 @@ $(document).ready(function() {
       $('.menu-overlayer').removeClass('open');
     }
   });
-
-  $(window).click(function(e) {
-
-    var target= $(e.target);
-
-    if(target.parents().hasClass("menu-overlayer") || target.hasClass("menu-overlayer")){
-      toggleMenu();
-    }
-
-    if(e.target == modal[0]) {
-      modal.removeClass('show-modal');
-
-    }
-  })
 
   ////Fill modal/////
 

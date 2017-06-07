@@ -144,7 +144,7 @@ p {
   height: 100%;
   visibility: hidden;
   transition: all 400ms ease;
-  transform: translateY(100vh);
+  transform: translateX(100vW);
   overflow-y: scroll; }
   .modal-wrapper.show-modal {
     visibility: visible;
@@ -222,12 +222,12 @@ p {
 
 .close {
   transition: all 200ms ease;
-  background: url(../images/arrow-up.svg);
   display: inline-block;
   height: 20px;
   width: 20px;
-  background-size: contain;
   background-repeat: no-repeat;
+  background: url(../images/arrow-left.svg);
+  background-size: contain;
   margin: 15px 10px; }
   .close:hover, .close:focus {
     transform: translateY(-4px);
@@ -606,32 +606,26 @@ p {
     padding-left: 55px;
     font-size: .8rem; } }
 @media only screen and (max-width: 665px) {
-  .modal-wrapper {
-    transform: translateX(100vw); }
-    .modal-wrapper .close {
-      background: url(../images/arrow-left.svg);
-      background-size: contain;
-      margin-top: 15px; }
-    .modal-wrapper .work-img2 {
-      width: 80%; }
-    .modal-wrapper .title {
-      position: absolute;
-      text-transform: uppercase;
-      font-size: 43px;
-      color: white;
-      left: -30px;
-      line-height: 59px;
-      bottom: -110px;
-      top: initial;
-      width: 260px; }
-    .modal-wrapper .content-wrapper {
-      width: 80%;
-      padding: 25% 0 25% 0; }
-    .modal-wrapper .work-description {
-      color: rgba(255, 255, 255, 0.6);
-      padding: 120px 0 0px 0;
-      line-height: 20px;
-      font-size: .8rem; }
+  .modal-wrapper .work-img2 {
+    width: 80%; }
+  .modal-wrapper .title {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 43px;
+    color: white;
+    left: -30px;
+    line-height: 59px;
+    bottom: -110px;
+    top: initial;
+    width: 260px; }
+  .modal-wrapper .content-wrapper {
+    width: 80%;
+    padding: 25% 0; }
+  .modal-wrapper .work-description {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 120px 0 0px 0;
+    line-height: 20px;
+    font-size: .8rem; }
 
   .splash-page .splash-page-content {
     padding: 50px 5%; }

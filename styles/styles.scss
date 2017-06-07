@@ -168,7 +168,7 @@ p{
   height: 100%;
   visibility: hidden;
   transition: all 400ms ease;
-  transform: translateY(100vh);
+  transform: translateX(100vW);
   overflow-y: scroll;
   &.show-modal{
     visibility: visible;
@@ -264,12 +264,12 @@ p{
 
 .close {
   transition: all 200ms ease;
-  background: url(../images/arrow-up.svg);
   display: inline-block;
   height: 20px;
   width: 20px;
-  background-size: contain;
   background-repeat: no-repeat;
+  background: url(../images/arrow-left.svg);
+  background-size: contain;
   margin: 15px 10px;
   &:hover, &:focus{
     transform: translateY(-4px);
@@ -741,12 +741,6 @@ p{
 @media only screen and (max-width: 665px) {
 
   .modal-wrapper{
-    transform: translateX(100vw);
-    .close{
-      background: url(../images/arrow-left.svg);
-      background-size: contain;
-      margin-top: 15px;
-    }
     .work-img2{
       width: 80%;
     }
@@ -763,7 +757,7 @@ p{
     }
     .content-wrapper{
       width: 80%;
-      padding: 25% 0 25% 0;
+      padding: 25% 0;
     }
     .work-description{
       color: rgba(255, 255, 255, 0.6);
