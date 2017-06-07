@@ -1,0 +1,91 @@
+{
+  "developments":[
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-1.jpg",
+      "imgbig": "project-2",
+      "gitlink":"",
+      "livelink":"",
+      "subtitle": "REACT, WEBPACK"
+    },
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-2.jpg",
+      "imgbig": "project-2",
+      "gitlink":"",
+      "livelink":"",
+      "subtitle": "REACT, WEBPACK"
+    },
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-3.jpg",
+      "imgbig": "project-2",
+      "gitlink":"",
+      "livelink":"",
+      "subtitle": "REACT, WEBPACK"
+    },
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-4.jpg",
+      "imgbig": "project-2",
+      "gitlink":"",
+      "livelink":"",
+      "subtitle": "REACT, WEBPACK"
+    },
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-5.jpg",
+      "imgbig": "project-2",
+      "gitlink":"",
+      "livelink":"",
+      "subtitle": "REACT, WEBPACK"
+    },
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-6.jpg",
+      "imgbig": "project-2",
+      "gitlink":"",
+      "livelink":"",
+      "subtitle": "REACT, WEBPACK"
+    }
+
+  ],
+  "designs":[
+    {
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-2.jpg",
+      "imgbig1": "project-2",
+      "imgbig2": "project-2",
+      "modallink":"",
+      "subtitle": "REACT, WEBPACK"
+    },{
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-3.jpg",
+      "imgbig1": "project-2",
+      "imgbig2": "project-2",
+      "modallink":"",
+      "subtitle": "REACT, WEBPACK"
+    },{
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-5.jpg",
+      "imgbig1": "project-2",
+      "imgbig2": "project-2",
+      "modallink":"",
+      "subtitle": "REACT, WEBPACK"
+    },{
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-8.jpg",
+      "imgbig1": "project-2",
+      "imgbig2": "project-2",
+      "modallink":"",
+      "subtitle": "REACT, WEBPACK"
+    },{
+      "title": "marvel-memo",
+      "imgsmall": "images/projects/project-9.jpg",
+      "imgbig1": "project-2",
+      "imgbig2": "project-2",
+      "modallink":"",
+      "subtitle": "REACT, WEBPACK"
+    }
+  ]
+}

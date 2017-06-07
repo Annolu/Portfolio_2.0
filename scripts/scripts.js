@@ -14,35 +14,108 @@ $(document).ready(function() {
     prev = scrollTop;
   });
 
-  hideLoader();
-
   function hideLoader(){
     var loader= $('.loader-overlayer');
     loader.addClass('hide-loader');
   }
 
+  /// DEVELOPMENT LOOPS
+  const owlOptions = {
+    items:2,
+    loop:true,
+    dots:false,
+    autoWidth:true,
+    center:true,
+    responsive:{
+      600:{
+        items:2
+      }
+    }
+  }
+
+  const createDeveloperSection = (data) =>{
+    let developments = data.developments.map((item) => {
+      return ('<div class="project-item">' +
+                '<div class="item-info">' +
+                  '<h2>'+item.title+'</h2>' +
+                  '<a href="'+item.gitlink+'" target="_blank">github</a>' +
+                  '<a href="'+item.livelink+'" target="_blank">live</a>' +
+                  '<h3>'+item.subtitle+'</h3></div>' +
+                '<img src="'+item.imgsmall+'"></div>');
+    });
+    let owlDevelopment = $("#owl-development");
+    owlDevelopment.append(developments);
+
+    // development owl carousel
+    owlDevelopment.owlCarousel(owlOptions);
+
+    //arrows controls
+    $('.right-arrow-development').click(() => {
+      owlDevelopment.trigger('next.owl.carousel');
+    });
+    $('.left-arrow-development').click(() => {
+      owlDevelopment.trigger('prev.owl.carousel', [300]);
+    });
+  }
+
+  const createDesignerSection = (data) =>{
+    let designs = data.designs.map((item) => {
+      return ('<div class="project-item">' +
+                '<div class="item-info">' +
+                  '<h2>'+item.title+'</h2>' +
+                  '<a class="modalButton">github</a>' +
+                  '<h3>'+item.subtitle+'</h3></div>' +
+                '<img src="'+item.imgsmall+'"></div>');
+    });
+    let owlDesign = $("#owl-design");
+    owlDesign.append(designs);
+
+    // development owl carousel
+    owlDesign.owlCarousel(owlOptions);
+
+    //arrows controls
+    $('.right-arrow-design').click(() => {
+      owlDesign.trigger('next.owl.carousel');
+    });
+    $('.left-arrow-design').click(() => {
+      owlDesign.trigger('prev.owl.carousel', [300]);
+    });
+    // set the buttons yo!
+    setModal();
+  }
+
+  // get the json file
+  $.getJSON( './data.json', (data) => {
+    createDeveloperSection(data);
+    createDesignerSection(data);
+    // now is a good time to hide this bi**
+    hideLoader();
+  });
+
   ////Modal/////
+  const setModal = () => {
+    var modal = $('#myModal');
+    var modalButton = $(".modalButton");
+    var span = $(".close");
+    var showModal= false;
 
-  var modal = $('#myModal');
-  var modalButton = $(".modalButton");
-  var span = $(".close");
-  var showModal= false;
+    modalButton.click(function(e) {
+        setTimeout(function(){modal.addClass('show-modal')}, 0);
+        $('.body-wrapper').addClass('scale-body-wrapper');
+        $('body').addClass('no-scroll');
+        showModal= true;
+        nav.removeClass('hidden');
+      // fillModal(e);
+    });
 
-  modalButton.click(function(e) {
-      setTimeout(function(){modal.addClass('show-modal')}, 0);
-      $('.body-wrapper').addClass('scale-body-wrapper');
-      $('body').addClass('no-scroll');
-      showModal= true;
-      nav.removeClass('hidden');
-    // fillModal(e);
-  });
+    span.click(function() {
+      modal.removeClass('show-modal');
+      setTimeout(function(){$('.body-wrapper').removeClass('scale-body-wrapper')}, 0);
+      $('body').removeClass('no-scroll');
+      showModal= false;
+    });
+  }
 
-  span.click(function() {
-    modal.removeClass('show-modal');
-    setTimeout(function(){$('.body-wrapper').removeClass('scale-body-wrapper')}, 0);
-    $('body').removeClass('no-scroll');
-    showModal= false;
-  });
 
 
   ////Mobile version menu/////
@@ -88,16 +161,16 @@ $(document).ready(function() {
   ////Smooth scroll to internal links/////
 
   $('a[href^="#"]').on('click', function(event) {
-  var target = $(this.getAttribute('href'));
+    var target = $(this.getAttribute('href'));
 
-  if(target.length) {
-    event.preventDefault();
+    if(target.length) {
+      event.preventDefault();
 
-    $('body, html').stop().animate({
-      scrollTop: target[0].offsetTop
-    }, 900);
-  }
-});
+      $('body, html').stop().animate({
+        scrollTop: target[0].offsetTop
+      }, 900);
+    }
+  });
 
   ////Chart////
   var ctxA = document.getElementById("augusto-chart");
@@ -142,53 +215,6 @@ $(document).ready(function() {
     options: options
   });
 
-  // development owl carousel
-  var owlDevelopment = $("#owl-development");
-  owlDevelopment.owlCarousel({
-    items:2,
-    loop:true,
-    dots:false,
-    autoWidth:true,
-    center:true,
-    responsive:{
-      600:{
-        items:2
-      }
-    }
-  });
-
-  //arrows controls
-  owlDevelopment.owlCarousel();
-  $('.right-arrow-development').click(function() {
-    owlDevelopment.trigger('next.owl.carousel');
-  });
-  $('.left-arrow-development').click(function() {
-    owlDevelopment.trigger('prev.owl.carousel', [300]);
-  });
-
-  // design owl carousel
-  var owlDesign = $("#owl-design");
-  owlDesign.owlCarousel({
-    items:2,
-    loop:true,
-    dots:false,
-    autoWidth:true,
-    center:true,
-    responsive:{
-      600:{
-        items:2
-      }
-    }
-  });
-
-  //arrows controls
-  owlDesign.owlCarousel();
-  $('.right-arrow-design').click(function() {
-    owlDesign.trigger('next.owl.carousel');
-  });
-  $('.left-arrow-design').click(function() {
-    owlDesign.trigger('prev.owl.carousel', [300]);
-  });
 
   //scroll reveal
   window.sr = ScrollReveal({
