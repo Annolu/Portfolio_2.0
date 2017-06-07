@@ -58,6 +58,7 @@ $(document).ready(function() {
     });
   }
 
+
   const createDesignerSection = (data) =>{
     let designs = data.designs.map((item) => {
       return ('<div class="project-item">' +
@@ -96,7 +97,7 @@ $(document).ready(function() {
   const setModal = () => {
     var modal = $('#myModal');
     var modalButton = $(".modalButton");
-    var span = $(".close");
+    var span = $(".close-modal");
     var showModal= false;
 
     modalButton.click(function(e) {
@@ -115,7 +116,6 @@ $(document).ready(function() {
       showModal= false;
     });
   }
-
 
 
   ////Mobile version menu/////
@@ -227,7 +227,7 @@ $(document).ready(function() {
   });
   //callbacks
   sr.reveal('.subtitle',{duration: 500, origin:'top'});
-  sr.reveal('.title',{delay: 500});
+  sr.reveal('.splash-page .title',{delay: 500});
   sr.reveal('.splash-page-footer',{origin:'right',reset: true});
   sr.reveal('.development-section',{distance: '100px'});
   sr.reveal('.design-section',{distance: '100px'});
