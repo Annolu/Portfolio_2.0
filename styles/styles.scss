@@ -153,7 +153,6 @@ p{
   transition: all 600ms ease;
   opacity: 1;
   &.scale-body-wrapper{
-    transform: scale(.9);
     opacity: 0;
     visibility: hidden;
   }
@@ -431,8 +430,7 @@ p{
     position: absolute;
     bottom: -35px;
     padding-left:15%;
-    z-index: 3;
-
+    z-index: 1;
   }
 }
 
@@ -807,6 +805,11 @@ p{
   .item-info {
     h3,h2 {
       padding:20px 0;
+    }
+  }
+  .body-wrapper{
+    &.scale-body-wrapper{
+      transform: scale(.9);
     }
   }
 }

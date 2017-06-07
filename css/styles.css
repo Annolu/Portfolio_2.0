@@ -131,7 +131,6 @@ p {
   transition: all 600ms ease;
   opacity: 1; }
   .body-wrapper.scale-body-wrapper {
-    transform: scale(0.9);
     opacity: 0;
     visibility: hidden; }
 
@@ -367,7 +366,7 @@ p {
     position: absolute;
     bottom: -35px;
     padding-left: 15%;
-    z-index: 3; }
+    z-index: 1; }
 
 .vertical-line {
   border-left: 1px dashed white;
@@ -654,6 +653,9 @@ p {
     width: 300px; }
 
   .item-info h3, .item-info h2 {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+
+  .body-wrapper.scale-body-wrapper {
+    transform: scale(0.9); } }
 
 /*# sourceMappingURL=styles.css.map */

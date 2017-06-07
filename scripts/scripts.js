@@ -154,13 +154,20 @@ $(document).ready(function() {
 
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
-    toggleMenu();
+
     if(target.length) {
       event.preventDefault();
-
       $('body, html').stop().animate({
         scrollTop: target[0].offsetTop
       }, 900);
+    }
+  });
+
+  // Close modal if clicked on overlayer///
+  $(window).click((e) => {
+    let target = $(e.target);
+    if(target.parents().hasClass('menu-overlayer') || target.hasClass('menu-overlayer')){
+      toggleMenu();
     }
   });
 
