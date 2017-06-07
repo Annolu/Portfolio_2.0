@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
   //// hide/show top-menu on scroll
   var prev = 0;
   var $window = $(window);
@@ -16,8 +14,7 @@ $(document).ready(function() {
     prev = scrollTop;
   });
 
-  hideLoader();
-  //setTimeout(hideLoader, 2000);
+  setTimeout(hideLoader, 2000);
   function hideLoader(){
     var loader= $('.loader-overlayer');
     loader.addClass('hide-loader');
@@ -28,15 +25,23 @@ $(document).ready(function() {
   var modal = $('#myModal');
   var modalButton = $(".modalButton");
   var span = $(".close");
+  var showModal= false;
 
   modalButton.click(function(e) {
-    modal.addClass('show-modal');
-    fillModal(e);
+      setTimeout(function(){modal.addClass('show-modal')}, 0);
+      $('.body-wrapper').addClass('scale-body-wrapper');
+      $('body').addClass('no-scroll');
+      showModal= true;
+    // fillModal(e);
   });
 
   span.click(function() {
     modal.removeClass('show-modal');
+    setTimeout(function(){$('.body-wrapper').removeClass('scale-body-wrapper')}, 0);
+    $('body').removeClass('no-scroll');
+    showModal= false;
   });
+
 
   ////Mobile version menu/////
 
@@ -44,7 +49,7 @@ $(document).ready(function() {
   burger.click(toggleMenu)
 
   function toggleMenu() {
-    $('body').toggleClass('no-scroll')
+    $('body').toggleClass('no-scroll');
     $('.menu-overlayer').toggleClass('open');
   }
 
@@ -65,6 +70,7 @@ $(document).ready(function() {
 
     if(e.target == modal[0]) {
       modal.removeClass('show-modal');
+
     }
   })
 
@@ -152,7 +158,6 @@ $(document).ready(function() {
   //arrows controls
   owlDevelopment.owlCarousel();
   $('.right-arrow-development').click(function() {
-    console.log('mierda')
     owlDevelopment.trigger('next.owl.carousel');
   });
   $('.left-arrow-development').click(function() {

@@ -14,8 +14,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body>
+  <div id="myModal" class="modal-overlayer">
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <span class="close"></span>
+      </div>
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
   <div class="loader-overlayer">
     <div class="loader-wrapper">
       <ul>
@@ -29,248 +37,243 @@
       </ul>
     </div>
   </div>
-  <div id="myModal" class="modal">
-    <div class="modal-wrapper">
-      <span class="close">&times;</span>
-      <div class="modal-content">
-      </div>
-    </div>
-  </div>
-  <div class="top-menu" id="topMenu">
-    <a class="menu-name sliding-url">Augusto Solorzano</a>
-    <ul>
-      <li><a class="sliding-url" href="#projects">Projects</a></li>
-      <li><a class="sliding-url" href="#experience">Experience</a></li>
-      <li><a class="sliding-url" href="#contact">Contact</a></li>
-    </ul>
-    <div class="burger-container" id="burger"></div>
-  </div>
-  <div class="menu-overlayer">
-    <div class="menu-item-wrapper">
+  <div class="body-wrapper">
+    <div class="top-menu" id="topMenu">
+      <a class="menu-name sliding-url">Augusto Solorzano</a>
       <ul>
-        <li class="item-1"><a class="menu-item" href="#projects"><h3>Projects</h3></a></li>
-        <li class="item-2"><a class="menu-item" href="#experience"><h3>Experience</h3></a></li>
-        <li class="item-3"><a class="menu-item" href="#contact"><h3>Contact</h3></a></li>
+        <li><a class="sliding-url" href="#projects">Projects</a></li>
+        <li><a class="sliding-url" href="#experience">Experience</a></li>
+        <li><a class="sliding-url" href="#contact">Contact</a></li>
       </ul>
+      <div class="burger-container" id="burger"></div>
     </div>
-  </div>
-  <div class="splash-page">
-    <div class="splash-page-content">
-      <div class="subtitle">HEY THERE</div>
-      <div class="title">I'm Augusto Solorzano, a front end <a href="#" class="sliding-url">developer</a> and UX/UI <a href="#" class="sliding-url">designer</a> in Manchester, UK.</div>
-    </div>
-    <div class="splash-page-footer">
-      <h3>RECENT PROJECTS</h3>
-      <div class="vertical-line"></div>
-    </div>
-  </div>
-  <div class="projects-section" id="projects">
-    <div class="development-section">
-      <div class="central-panel">
-        <h2>Development</h2>
-        <h3>react, node, redux, webpack, sass, P5.js, firebase, wordpress</h3>
-      </div>
-      <div class="owl-carousel" id="owl-development">
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Marvel Memo</h2>
-            <a class="modalButton" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-1.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-2.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-3.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-4.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-5.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-6.jpg">
-        </div>
-
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-8.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-9.jpg">
-        </div>
-      </div>
-      <div class="arrow left-arrow-development"></div>
-      <div class="arrow right-arrow-development"></div>
-    </div>
-    <div class="design-section">
-      <div class="central-panel">
-        <h2>Design</h2>
-        <h3>ui/ux, web design, branding, svg/css3 animations, printing design</h3>
-      </div>
-      <div class="owl-carousel" id="owl-design">
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Marvel Memo</h2>
-            <a class="modalButton" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-6.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-7.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-8.jpg">
-        </div>
-        <div class="project-item">
-          <div class="item-info">
-            <h2>Knnect</h2>
-            <a href="#" target="_blank">github</a>
-            <a href="#" target="_blank">live</a>
-            <h3>REACT, WEBPACK</h3>
-          </div>
-          <img src="images/projects/project-9.jpg">
-        </div>
-      </div>
-      <div class="arrow left-arrow-design"></div>
-      <div class="arrow right-arrow-design"></div>
-    </div>
-  </div>
-  <div class="awards-section">
-    <div class="central-panel">
-      <h2>Skills/Awards</h2>
-      <h3>These are some of my skillz</h3>
-      <div class="sections skills-chart">
-        <h3>Skillz</h3>
-        <canvas id="augusto-chart" class="polar-chart" width="400" height="400"></canvas>
-      </div>
-      <div class="sections awards-wrapper">
-        <h3>Awards</h3>
-        <ul class="lists">
-          <li>
-            <p class="bold-paragraph">2016 - Telemedicine Magazine</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine, Article in Telemedicine Magazine</p>
-          </li>
-          <li>
-            <p class="bold-paragraph">2016 - Telemedicine Magazine</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine,Article </p>
-          </li>
-          <li>
-            <p class="bold-paragraph">2016 - Telemedicine Magazine</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine, Article in Telemedicine Magazine</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="experience-section" id="experience">
-    <div class="central-panel">
-      <div class="experience-titles">
-        <h2>Experience</h2>
-        <h3>education and work</h3>
-      </div>
-      <div class="experience-wrapper">
-        <ul class="lists">
-          <li>
-            <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
-          </li>
-          <li>
-            <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
-          </li>
-          <li>
-            <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
-          </li>
-          <li>
-            <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
-          </li>
-          <li>
-            <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
-            <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="experience-section-footer">
-      <h3>Have a project for me?</h3>
-      <div class="vertical-line"></div>
-    </div>
-  </div>
-  <div class="contact-section" id="contact">
-    <div class="central-panel">
-      <h3>say hello</h3>
-      <a href="mailto:jaugustost@gmail.com" class="sliding-url">jaugustost@gmail.com</a>
-      <div class="social-media" id="socialMedia">
+    <div class="menu-overlayer">
+      <div class="menu-item-wrapper">
         <ul>
-          <li><a href="#"><span class="twitter social-icons"></span></a></li>
-          <li><a href="#"><span class="github social-icons"></span></a></li>
-          <li><a href="#"><span class="linkedin social-icons"></span></a></li>
-          <li><a href="#"><span class="soundcloud social-icons"></span></a></li>
+          <li class="item-1"><a class="menu-item" href="#projects"><h3>Projects</h3></a></li>
+          <li class="item-2"><a class="menu-item" href="#experience"><h3>Experience</h3></a></li>
+          <li class="item-3"><a class="menu-item" href="#contact"><h3>Contact</h3></a></li>
         </ul>
       </div>
-      <p class="copyright">Copyright &copy; 2017 Augusto Solorzano</p>
+    </div>
+    <div class="splash-page">
+      <div class="splash-page-content">
+        <div class="subtitle">HEY THERE</div>
+        <div class="title">I'm Augusto Solorzano, a front end <a href="#" class="sliding-url">developer</a> and UX/UI <a href="#" class="sliding-url">designer</a> in Manchester, UK.</div>
+      </div>
+      <div class="splash-page-footer">
+        <h3>RECENT PROJECTS</h3>
+        <div class="vertical-line"></div>
+      </div>
+    </div>
+    <div class="projects-section" id="projects">
+      <div class="development-section">
+        <div class="central-panel">
+          <h2>Development</h2>
+          <h3>react, node, redux, webpack, sass, P5.js, firebase, wordpress</h3>
+        </div>
+        <div class="owl-carousel" id="owl-development">
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Marvel Memo</h2>
+              <a class="modalButton" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-1.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-2.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-3.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-4.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-5.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-6.jpg">
+          </div>
+
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-8.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-9.jpg">
+          </div>
+        </div>
+        <div class="arrow left-arrow-development"></div>
+        <div class="arrow right-arrow-development"></div>
+      </div>
+      <div class="design-section">
+        <div class="central-panel">
+          <h2>Design</h2>
+          <h3>ui/ux, web design, branding, svg/css3 animations, printing design</h3>
+        </div>
+        <div class="owl-carousel" id="owl-design">
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Marvel Memo</h2>
+              <a class="modalButton" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-6.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-7.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-8.jpg">
+          </div>
+          <div class="project-item">
+            <div class="item-info">
+              <h2>Knnect</h2>
+              <a href="#" target="_blank">github</a>
+              <a href="#" target="_blank">live</a>
+              <h3>REACT, WEBPACK</h3>
+            </div>
+            <img src="images/projects/project-9.jpg">
+          </div>
+        </div>
+        <div class="arrow left-arrow-design"></div>
+        <div class="arrow right-arrow-design"></div>
+      </div>
+    </div>
+    <div class="awards-section">
+      <div class="central-panel">
+        <h2>Skills/Awards</h2>
+        <h3>These are some of my skillz</h3>
+        <div class="sections skills-chart">
+          <h3>Skillz</h3>
+          <canvas id="augusto-chart" class="polar-chart" width="400" height="400"></canvas>
+        </div>
+        <div class="sections awards-wrapper">
+          <h3>Awards</h3>
+          <ul class="lists">
+            <li>
+              <p class="bold-paragraph">2016 - Telemedicine Magazine</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine, Article in Telemedicine Magazine</p>
+            </li>
+            <li>
+              <p class="bold-paragraph">2016 - Telemedicine Magazine</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine,Article </p>
+            </li>
+            <li>
+              <p class="bold-paragraph">2016 - Telemedicine Magazine</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine, Article in Telemedicine Magazine</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="experience-section" id="experience">
+      <div class="central-panel">
+        <div class="experience-titles">
+          <h2>Experience</h2>
+          <h3>education and work</h3>
+        </div>
+        <div class="experience-wrapper">
+          <ul class="lists">
+            <li>
+              <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
+            </li>
+            <li>
+              <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
+            </li>
+            <li>
+              <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
+            </li>
+            <li>
+              <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
+            </li>
+            <li>
+              <p class="bold-paragraph">2016 - Front End Developer/UX designer</p>
+              <p class="indeted-paragraph">Article in Telemedicine Magazine about the future of remote and virtual therapy</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience-section-footer">
+        <h3>Have a project for me?</h3>
+        <div class="vertical-line"></div>
+      </div>
+    </div>
+    <div class="contact-section" id="contact">
+      <div class="central-panel">
+        <h3>say hello</h3>
+        <a href="mailto:jaugustost@gmail.com" class="sliding-url">jaugustost@gmail.com</a>
+        <div class="social-media" id="socialMedia">
+          <ul>
+            <li><a href="#"><span class="twitter social-icons"></span></a></li>
+            <li><a href="#"><span class="github social-icons"></span></a></li>
+            <li><a href="#"><span class="linkedin social-icons"></span></a></li>
+            <li><a href="#"><span class="soundcloud social-icons"></span></a></li>
+          </ul>
+        </div>
+        <p class="copyright">Copyright &copy; 2017 Augusto Solorzano</p>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
