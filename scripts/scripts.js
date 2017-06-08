@@ -38,8 +38,8 @@ $(document).ready(function() {
       return ('<div class="project-item">' +
                 '<div class="item-info">' +
                   '<h2>'+item.title+'</h2>' +
-                  '<a href="'+item.gitlink+'" target="_blank">github</a>' +
-                  '<a href="'+item.livelink+'" target="_blank">live</a>' +
+                  '<a class="modalButton">github</a>' +
+                  '<a href="'+item.livelink+'">live</a>' +
                   '<h3>'+item.subtitle+'</h3></div>' +
                 '<img src="'+item.imgsmall+'"></div>');
     });
@@ -56,38 +56,40 @@ $(document).ready(function() {
     $('.left-arrow-development').click(() => {
       owlDevelopment.trigger('prev.owl.carousel', [300]);
     });
-  }
 
-  const createDesignerSection = (data) =>{
-    let designs = data.designs.map((item) => {
-      return ('<div class="project-item">' +
-                '<div class="item-info">' +
-                  '<h2>'+item.title+'</h2>' +
-                  '<a class="modalButton">github</a>' +
-                  '<h3>'+item.subtitle+'</h3></div>' +
-                '<img src="'+item.imgsmall+'"></div>');
-    });
-    let owlDesign = $("#owl-design");
-    owlDesign.append(designs);
-
-    // development owl carousel
-    owlDesign.owlCarousel(owlOptions);
-
-    //arrows controls
-    $('.right-arrow-design').click(() => {
-      owlDesign.trigger('next.owl.carousel');
-    });
-    $('.left-arrow-design').click(() => {
-      owlDesign.trigger('prev.owl.carousel', [300]);
-    });
-    // set the buttons yo!
     setModal();
   }
+
+  // const createDesignerSection = (data) =>{
+  //   let designs = data.designs.map((item) => {
+  //     return ('<div class="project-item">' +
+  //               '<div class="item-info">' +
+  //                 '<h2>'+item.title+'</h2>' +
+  //                 '<a class="modalButton">github</a>' +
+  //                 '<h3>'+item.subtitle+'</h3></div>' +
+  //               '<img src="'+item.imgsmall+'"></div>');
+  //   });
+  //   let owlDesign = $("#owl-design");
+  //   owlDesign.append(designs);
+  //
+  //   // development owl carousel
+  //   owlDesign.owlCarousel(owlOptions);
+  //
+  //   //arrows controls
+  //   $('.right-arrow-design').click(() => {
+  //     owlDesign.trigger('next.owl.carousel');
+  //   });
+  //   $('.left-arrow-design').click(() => {
+  //     owlDesign.trigger('prev.owl.carousel', [300]);
+  //   });
+  //   // set the buttons yo!
+  //   setModal();
+  // }
 
   // Load the json file
   $.getJSON( './data.json', (data) => {
     createDeveloperSection(data);
-    createDesignerSection(data);
+    // createDesignerSection(data);
     // now is a good time to hide this bi**
     hideLoader();
     $('.body-wrapper').css('position', 'relative');
@@ -135,13 +137,6 @@ $(document).ready(function() {
     $('.menu-overlayer').toggleClass('open');
   }
 
-  $(window).resize(function() {
-    if($(window).width() > 680){
-      $('body').removeClass('no-scroll')
-      $('.menu-overlayer').removeClass('open');
-    }
-  });
-
   ////Fill modal/////
 
   function fillModal(e){
@@ -175,10 +170,10 @@ $(document).ready(function() {
   });
 
   ////Chart////
-  var ctxA = document.getElementById("augusto-chart");
+  var ctxA = document.getElementById("chart");
 
   var data = {
-    labels: ["JS/ES6", "CSS3", "HTML5", "UX","UI", "REDUX", "REACT"],
+    labels: ["JAVASCRIPT", "CSS3", "HTML5", "SASS","BOOSTRAP", "GITHUB", "JQUERY"],
     datasets: [
       {
         backgroundColor: 'rgba(254, 230, 76, 0.7)',
@@ -188,7 +183,7 @@ $(document).ready(function() {
         pointBackgroundColor: 'white',
         pointBorderWidth:1,
         pointHoverBorderWidth:1,
-        data: [8.5, 9.5, 9.5, 8, 9.5, 5, 7.5]
+        data: [7, 8.5, 8.5, 7.5, 7, 6, 7]
       }
     ]
   };
@@ -211,7 +206,7 @@ $(document).ready(function() {
     }
   }
 
-  var chartAugusto = new Chart(ctxA, {
+  var chart = new Chart(ctxA, {
     type: 'radar',
     data: data,
     options: options
@@ -233,6 +228,6 @@ $(document).ready(function() {
   sr.reveal('.splash-page-footer',{origin:'right',reset: true});
   sr.reveal('.development-section',{distance: '100px'});
   sr.reveal('.design-section',{distance: '100px'});
-  sr.reveal('#augusto-chart');
+  sr.reveal('#chart');
   sr.reveal('.experience-section-footer',{distance: '50px',origin:'right',reset: true});
 });
