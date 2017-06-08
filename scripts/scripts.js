@@ -90,6 +90,7 @@ $(document).ready(function() {
     createDesignerSection(data);
     // now is a good time to hide this bi**
     hideLoader();
+    $('.body-wrapper').css('position', 'relative');
   });
 
   ////Modal/////

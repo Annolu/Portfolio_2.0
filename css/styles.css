@@ -91,14 +91,14 @@ p {
       border-bottom-color: transparent;
       height: 53px;
       width: 53px;
-      left: 15px;
-      top: 12px; }
+      left: 2px;
+      top: 2px; }
     .loader-overlayer .loader.circle-2 {
       animation: rotateSpinner 1.6s linear 200ms infinite;
       height: 65px;
       width: 65px;
-      left: 12px;
-      top: 9px;
+      left: -1px;
+      top: -1px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       border-left-color: transparent;
       border-bottom-color: transparent; }
@@ -129,7 +129,8 @@ p {
   margin: 0;
   padding: 0;
   transition: all 600ms ease;
-  opacity: 1; }
+  opacity: 1;
+  position: fixed; }
   .body-wrapper.scale-body-wrapper {
     opacity: 0;
     visibility: hidden; }
@@ -227,11 +228,8 @@ p {
   background-repeat: no-repeat;
   background: url(../images/arrow-left.svg);
   background-size: contain;
-  margin: 15px 10px; }
-  .close:hover, .close:focus {
-    transform: translateY(-4px);
-    text-decoration: none;
-    cursor: pointer; }
+  margin: 15px 10px;
+  cursor: pointer; }
 
 @keyframes rotateSpinner {
   0% {
@@ -487,7 +485,8 @@ p {
       margin: 0 20px 0 0;
       display: block;
       transition: all 300ms ease;
-      background-size: contain; }
+      background-size: contain;
+      background-repeat: no-repeat; }
       .contact-section .social-media .social-icons:hover {
         transform: translateY(-8px); }
     .contact-section .social-media .twitter {
@@ -499,7 +498,11 @@ p {
     .contact-section .social-media .linkedin {
       background-image: url("../images/social-icons/linkedin-logo.svg"); }
     .contact-section .social-media .soundcloud {
-      background-image: url("../images/social-icons/soundcloud-logo.svg"); }
+      background-image: url("../images/social-icons/soundcloud-logo.svg");
+      height: 40px;
+      width: 40px;
+      top: 9px;
+      position: relative; }
   .contact-section p {
     font-weight: 400;
     font-size: .8rem; }
