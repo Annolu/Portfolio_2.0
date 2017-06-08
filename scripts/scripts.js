@@ -84,7 +84,7 @@ $(document).ready(function() {
     setModal();
   }
 
-  // get the json file
+  // Load the json file
   $.getJSON( './data.json', (data) => {
     createDeveloperSection(data);
     createDesignerSection(data);
@@ -159,7 +159,9 @@ $(document).ready(function() {
       event.preventDefault();
       $('body, html').stop().animate({
         scrollTop: target[0].offsetTop
-      }, 900);
+      }, 900, function (){
+        nav.removeClass('hidden');
+      });
     }
   });
 
