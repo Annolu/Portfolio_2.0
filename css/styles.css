@@ -185,7 +185,7 @@ p {
     text-align: center; }
   .modal-wrapper .work-img-title {
     position: relative; }
-  .modal-wrapper .title {
+  .modal-wrapper .work-title {
     position: absolute;
     top: 10px;
     text-transform: uppercase;
@@ -579,7 +579,7 @@ p {
 @media only screen and (max-width: 665px) {
   .modal-wrapper .work-img2 {
     width: 80%; }
-  .modal-wrapper .title {
+  .modal-wrapper .work-title {
     position: absolute;
     text-transform: uppercase;
     font-size: 43px;

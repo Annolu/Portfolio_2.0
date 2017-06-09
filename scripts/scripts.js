@@ -38,10 +38,10 @@ $(document).ready(function() {
       return ('<div class="project-item">' +
                 '<div class="item-info">' +
                   '<h2>'+item.title+'</h2>' +
-                  '<a class="modalButton">github</a>' +
-                  '<a href="'+item.livelink+'">live</a>' +
+                  '<a class="modalButton" id="'+item.title+'">view more</a>' +
+                  '<a target="_blank" href="'+item.livelink+'">live</a>' +
                   '<h3>'+item.subtitle+'</h3></div>' +
-                '<img src="'+item.imgsmall+'"></div>');
+                '<img src="'+item.imgthumb+'"></div>');
     });
     let owlDevelopment = $("#owl-development");
     owlDevelopment.append(developments);
@@ -57,46 +57,18 @@ $(document).ready(function() {
       owlDevelopment.trigger('prev.owl.carousel', [300]);
     });
 
-    setModal();
+    setModal(data);
   }
-
-  // const createDesignerSection = (data) =>{
-  //   let designs = data.designs.map((item) => {
-  //     return ('<div class="project-item">' +
-  //               '<div class="item-info">' +
-  //                 '<h2>'+item.title+'</h2>' +
-  //                 '<a class="modalButton">github</a>' +
-  //                 '<h3>'+item.subtitle+'</h3></div>' +
-  //               '<img src="'+item.imgsmall+'"></div>');
-  //   });
-  //   let owlDesign = $("#owl-design");
-  //   owlDesign.append(designs);
-  //
-  //   // development owl carousel
-  //   owlDesign.owlCarousel(owlOptions);
-  //
-  //   //arrows controls
-  //   $('.right-arrow-design').click(() => {
-  //     owlDesign.trigger('next.owl.carousel');
-  //   });
-  //   $('.left-arrow-design').click(() => {
-  //     owlDesign.trigger('prev.owl.carousel', [300]);
-  //   });
-  //   // set the buttons yo!
-  //   setModal();
-  // }
 
   // Load the json file
   $.getJSON( './data.json', (data) => {
     createDeveloperSection(data);
-    // createDesignerSection(data);
-    // now is a good time to hide this bi**
     hideLoader();
     $('.body-wrapper').css('position', 'relative');
   });
 
   ////Modal/////
-  const setModal = () => {
+  const setModal = (data) => {
     var modal = $('#myModal');
     var modalButton = $(".modalButton");
     var closeModalButton = $(".close-modal");
@@ -108,7 +80,7 @@ $(document).ready(function() {
         $('body').addClass('no-scroll');
         showModal= true;
         nav.removeClass('hidden');
-      // fillModal(e);
+      fillModal(e, data);
     });
 
     $('.footer-link').click(function() {
@@ -127,6 +99,22 @@ $(document).ready(function() {
     }
   }
 
+  ////Fill modal/////
+
+  function fillModal(e, data){
+    var modalData= data.developments.filter(function(item){
+      if(e.target.id == item.title){
+        return item;
+      }
+    })
+    console.log(modalData);
+    $('#work-header').html(modalData[0].title);
+    $('.work-img').attr('src', modalData[0].imgsmall).css('backgroundColor', modalData[0].themecolour);
+    $('.work-img2').attr('src', modalData[0].imgbig);
+    $('.modal-light-section').css('backgroundColor', modalData[0].themecolour);
+    $('.work-description').html(modalData[0].description);
+  }
+
   ////Mobile version menu/////
 
   var burger= $('#burger');
@@ -135,15 +123,6 @@ $(document).ready(function() {
   function toggleMenu() {
     $('body').toggleClass('no-scroll');
     $('.menu-overlayer').toggleClass('open');
-  }
-
-  ////Fill modal/////
-
-  function fillModal(e){
-    var originalModalInfo= e.target.parentNode.parentNode.parentNode;
-    var modalInfo= $(originalModalInfo).clone();
-    $(".modal-content").empty();
-    $(".modal-content").append(modalInfo);
   }
 
   ////Smooth scroll to internal links/////
@@ -211,7 +190,6 @@ $(document).ready(function() {
     data: data,
     options: options
   });
-
 
   //scroll reveal
   window.sr = ScrollReveal({

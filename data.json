@@ -1,91 +1,92 @@
 {
   "developments":[
     {
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-1.jpg",
-      "imgbig": "project-2",
-      "gitlink":"",
-      "livelink":"",
-      "subtitle": "REACT, WEBPACK"
+      "title": "Cristy",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
+      "imgsmall": "images/modal-img/cristy/cristy-top.png",
+      "imgbig": "images/modal-img/cristy/cristy-big.png",
+      "gitlink":"https://github.com/Annolu/Cristy-Website",
+      "livelink":"https://annolu.github.io/Cristy-Website/",
+      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "themecolour": "#4bb899"
     },
     {
-      "title": "mighty-muffin",
+      "title": "Mighty-Muffin",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
       "imgsmall": "images/projects/project-2.jpg",
       "imgbig": "project-2",
-      "gitlink":"",
-      "livelink":"",
-      "subtitle": "REACT, WEBPACK"
+      "gitlink":"https://github.com/Annolu/Mighty-Muffin",
+      "livelink":"https://annolu.github.io/Mighty-Muffin/",
+      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "description": "Responsive dashboard, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
+      "themecolour": "#044c62"
     },
     {
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-3.jpg",
-      "imgbig": "project-2",
-      "gitlink":"",
-      "livelink":"",
-      "subtitle": "REACT, WEBPACK"
+      "title": "Sedna",
+      "imgthumb": "images/modal-img/sedna/sedna-thumb.png",
+      "imgsmall": "images/modal-img/sedna/sedna-top.png",
+      "imgbig": "images/modal-img/sedna/sedna-big.png",
+      "gitlink":"https://github.com/Annolu/Sedna",
+      "livelink":"https://annolu.github.io/Sedna/",
+      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "themecolour": "#FF5274"
     },
     {
-      "title": "marvel-memo",
+      "title": "Creative",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
       "imgsmall": "images/projects/project-4.jpg",
       "imgbig": "project-2",
-      "gitlink":"",
-      "livelink":"",
-      "subtitle": "REACT, WEBPACK"
+      "gitlink":"https://github.com/Annolu/Creative",
+      "livelink":"https://annolu.github.io/Creative/",
+      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Bootstrap Templates",
+      "themecolour": "#F05F40"
     },
     {
-      "title": "marvel-memo",
+      "title": "Comic Shelves",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
       "imgsmall": "images/projects/project-5.jpg",
       "imgbig": "project-2",
-      "gitlink":"",
-      "livelink":"",
-      "subtitle": "REACT, WEBPACK"
+      "gitlink":"https://github.com/Annolu/Comics-Shelves",
+      "livelink":"https://annolu.github.io/Comics-Shelves/",
+      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
+      "themecolour": "rgba(250, 0, 0, 0.7)"
     },
     {
-      "title": "marvel-memo",
+      "title": "WederApp",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
+      "imgsmall": "images/projects/project-5.jpg",
+      "imgbig": "project-2",
+      "gitlink":"https://github.com/Annolu/WederApp-design",
+      "livelink":"https://weder-app.herokuapp.com/",
+      "subtitle": "JAVASCRIPT, HTML5, CSS",
+      "description": "One page responsive app, built with HTML5, JavaScript, Jquery and Sass. Design by Oburu",
+      "themecolour": "#f2f2f2"
+    },
+    {
+      "title": "Rebus",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
+      "imgsmall": "images/projects/project-5.jpg",
+      "imgbig": "project-2",
+      "gitlink":"https://github.com/Annolu/Portfolio",
+      "livelink":"",
+      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "themecolour": "#4bb899"
+    },
+    {
+      "title": "SkinnyFlakk",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
       "imgsmall": "images/projects/project-6.jpg",
       "imgbig": "project-2",
-      "gitlink":"",
-      "livelink":"",
-      "subtitle": "REACT, WEBPACK"
-    }
-
-  ],
-  "designs":[
-    {
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-2.jpg",
-      "imgbig1": "project-2",
-      "imgbig2": "project-2",
-      "modallink":"",
-      "subtitle": "REACT, WEBPACK"
-    },{
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-3.jpg",
-      "imgbig1": "project-2",
-      "imgbig2": "project-2",
-      "modallink":"",
-      "subtitle": "REACT, WEBPACK"
-    },{
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-5.jpg",
-      "imgbig1": "project-2",
-      "imgbig2": "project-2",
-      "modallink":"",
-      "subtitle": "REACT, WEBPACK"
-    },{
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-8.jpg",
-      "imgbig1": "project-2",
-      "imgbig2": "project-2",
-      "modallink":"",
-      "subtitle": "REACT, WEBPACK"
-    },{
-      "title": "marvel-memo",
-      "imgsmall": "images/projects/project-9.jpg",
-      "imgbig1": "project-2",
-      "imgbig2": "project-2",
-      "modallink":"",
-      "subtitle": "REACT, WEBPACK"
+      "gitlink":"https://github.com/Annolu/Skinny-Flakk",
+      "livelink":"http://www.skinnyflakk.com/",
+      "subtitle": "WORDPRESS, JAVASCRIPT, HTML5, CSS",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "themecolour": "#ddd"
     }
   ]
 }
