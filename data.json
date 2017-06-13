@@ -1,24 +1,35 @@
 {
   "developments":[
     {
-      "title": "Cristy",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/modal-img/cristy/cristy-top.png",
-      "imgbig": "images/modal-img/cristy/cristy-big.png",
-      "gitlink":"https://github.com/Annolu/Cristy-Website",
-      "livelink":"https://annolu.github.io/Cristy-Website/",
-      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
-      "themecolour": "#4bb899"
+      "title": "Creative",
+      "imgthumb": "images/modal-img/creative/thumb-creative.jpg",
+      "imgsmall": "images/modal-img/creative/top-creative.png",
+      "imgbig": "images/modal-img/creative/big-creative.png",
+      "gitlink":"https://github.com/Annolu/Creative",
+      "livelink":"https://annolu.github.io/Creative/",
+      "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Bootstrap Templates",
+      "themecolour": "#F05F40"
+    },
+    {
+      "title": "Comic Shelves",
+      "imgthumb": "images/modal-img/marvel/marvel-thumb.jpg",
+      "imgsmall": "images/modal-img/marvel/top-marvel.png",
+      "imgbig": "images/modal-img/marvel/big-marvel.png",
+      "gitlink":"https://github.com/Annolu/Comics-Shelves",
+      "livelink":"https://annolu.github.io/Comics-Shelves/",
+      "subtitle": "JS, HTML5, SASS, JQUERY, AJAX, MARVEL API",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
+      "themecolour": "rgba(250, 0, 0, 0.7)"
     },
     {
       "title": "Mighty-Muffin",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/projects/project-2.jpg",
-      "imgbig": "project-2",
+      "imgthumb": "images/modal-img/mightymuffin/mighty-thumb.jpg",
+      "imgsmall": "images/modal-img/mightymuffin/top-mighty.png",
+      "imgbig": "images/modal-img/mightymuffin/mighty-big.png",
       "gitlink":"https://github.com/Annolu/Mighty-Muffin",
       "livelink":"https://annolu.github.io/Mighty-Muffin/",
-      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP, AJAX",
       "description": "Responsive dashboard, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
       "themecolour": "#044c62"
     },
@@ -29,42 +40,31 @@
       "imgbig": "images/modal-img/sedna/sedna-big.png",
       "gitlink":"https://github.com/Annolu/Sedna",
       "livelink":"https://annolu.github.io/Sedna/",
-      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
       "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
       "themecolour": "#FF5274"
     },
     {
-      "title": "Creative",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/projects/project-4.jpg",
-      "imgbig": "project-2",
-      "gitlink":"https://github.com/Annolu/Creative",
-      "livelink":"https://annolu.github.io/Creative/",
-      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Bootstrap Templates",
-      "themecolour": "#F05F40"
-    },
-    {
-      "title": "Comic Shelves",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/projects/project-5.jpg",
-      "imgbig": "project-2",
-      "gitlink":"https://github.com/Annolu/Comics-Shelves",
-      "livelink":"https://annolu.github.io/Comics-Shelves/",
-      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
-      "themecolour": "rgba(250, 0, 0, 0.7)"
-    },
-    {
       "title": "WederApp",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/projects/project-5.jpg",
-      "imgbig": "project-2",
+      "imgthumb": "images/modal-img/weder/weder-thumb.jpg",
+      "imgsmall": "images/modal-img/weder/weder-top.png",
+      "imgbig": "images/modal-img/weder/weder-big.png",
       "gitlink":"https://github.com/Annolu/WederApp-design",
       "livelink":"https://weder-app.herokuapp.com/",
-      "subtitle": "JAVASCRIPT, HTML5, CSS",
+      "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
       "description": "One page responsive app, built with HTML5, JavaScript, Jquery and Sass. Design by Oburu",
       "themecolour": "#f2f2f2"
+    },
+    {
+      "title": "Cristy",
+      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
+      "imgsmall": "images/modal-img/cristy/cristy-top.png",
+      "imgbig": "images/modal-img/cristy/cristy-big.png",
+      "gitlink":"https://github.com/Annolu/Cristy-Website",
+      "livelink":"https://annolu.github.io/Cristy-Website/",
+      "subtitle": "JS, HTML5, SASS, JQUERY",
+      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "themecolour": "#4bb899"
     },
     {
       "title": "Rebus",
@@ -73,18 +73,18 @@
       "imgbig": "project-2",
       "gitlink":"https://github.com/Annolu/Portfolio",
       "livelink":"",
-      "subtitle": "JAVASCRIPT, HTML5, CSS, JQUERY, SASS",
+      "subtitle": "JS, HTML5, JQUERY, SASS",
       "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
       "themecolour": "#4bb899"
     },
     {
       "title": "SkinnyFlakk",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/projects/project-6.jpg",
-      "imgbig": "project-2",
+      "imgthumb": "images/modal-img/skinnyflakk/skinny-thumb.jpg",
+      "imgsmall": "images/modal-img/skinnyflakk/skinny-top.png",
+      "imgbig": "images/modal-img/skinnyflakk/skinny-big.png",
       "gitlink":"https://github.com/Annolu/Skinny-Flakk",
       "livelink":"http://www.skinnyflakk.com/",
-      "subtitle": "WORDPRESS, JAVASCRIPT, HTML5, CSS",
+      "subtitle": "WORDPRESS, JS, HTML5, CSS, JQUERY",
       "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
       "themecolour": "#ddd"
     }

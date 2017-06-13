@@ -144,11 +144,11 @@ p {
   height: 100%;
   visibility: hidden;
   transition: all 400ms ease;
-  transform: translateX(100vW);
+  left: 100vw;
   overflow-y: scroll; }
   .modal-wrapper.show-modal {
     visibility: visible;
-    transform: none; }
+    left: 0; }
   .modal-wrapper .modal-dark-section {
     background-color: #201F1F; }
   .modal-wrapper .modal-light-section {
@@ -163,7 +163,6 @@ p {
     background-color: #201F1F;
     text-align: center; }
   .modal-wrapper .close-modal {
-    width: 180px;
     cursor: pointer; }
   .modal-wrapper .content-wrapper {
     display: block;
@@ -175,14 +174,15 @@ p {
     cursor: pointer;
     display: inline-block;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 24px;
-    color: white;
-    margin: 100px 0;
+    font-size: 17px;
+    margin: 5% 0;
     letter-spacing: 2px;
     padding-bottom: 0;
     font-weight: 300;
     text-align: center; }
+    .modal-wrapper .footer-link a, .modal-wrapper .footer-link span {
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0 20px; }
   .modal-wrapper .work-img-title {
     position: relative; }
   .modal-wrapper .work-title {
@@ -210,10 +210,13 @@ p {
     font-weight: 300; }
   .modal-wrapper .modal-header {
     position: fixed;
-    height: 50px;
     width: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.8); }
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 50px;
+    z-index: 1; }
+    .modal-wrapper .modal-header > div {
+      width: 180px; }
     .modal-wrapper .modal-header h3 {
       padding: 0;
       position: absolute;
@@ -316,7 +319,7 @@ p {
     transform: translateY(100%); }
 
 .title {
-  font-size: 62px;
+  font-size: 55px;
   letter-spacing: 3px;
   padding-bottom: 0;
   font-weight: 300;
@@ -345,7 +348,8 @@ p {
       color: #787878;
       text-decoration: none;
       padding-bottom: 0;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 200ms ease; }
       .splash-page .splash-page-content a:hover {
         color: white; }
   .splash-page .splash-page-footer {
@@ -457,10 +461,15 @@ p {
   padding-bottom: 40px; }
   .contact-section .copyright {
     color: rgba(255, 255, 255, 0.6); }
+    .contact-section .copyright .oburu-link {
+      color: white;
+      transition: all 200ms ease; }
+      .contact-section .copyright .oburu-link:hover {
+        color: rgba(255, 255, 255, 0.6); }
   .contact-section p {
     font-weight: 400;
     font-size: .8rem; }
-  .contact-section a {
+  .contact-section .email {
     font-size: 24px;
     color: white;
     margin: 0;
@@ -627,6 +636,10 @@ p {
     padding: 20px 0; }
 
   .body-wrapper.scale-body-wrapper {
-    transform: scale(0.9); } }
+    transform: scale(0.9); }
+
+  .contact-section
+  .email {
+    font-size: 19px; } }
 
 /*# sourceMappingURL=styles.css.map */

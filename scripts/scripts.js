@@ -3,20 +3,20 @@ $(document).ready(function() {
   //// hide/show top-menu on scroll
   var prev = 0;
   var $window = $(window);
-  var nav = $('.top-menu');
+  var $nav = $('.top-menu');
 
   $window.on('scroll', function(){
     var scrollTop = $window.scrollTop();
-    nav.toggleClass('hidden', scrollTop < prev);
+    $nav.toggleClass('hidden', scrollTop < prev);
     if(scrollTop==0){
-      nav.removeClass('hidden');
+      $nav.removeClass('hidden');
     }
     prev = scrollTop;
   });
 
   function hideLoader(){
-    var loader= $('.loader-overlayer');
-    loader.addClass('hide-loader');
+    var $loader= $('.loader-overlayer');
+    $loader.addClass('hide-loader');
   }
 
   /// DEVELOPMENT LOOPS
@@ -39,22 +39,22 @@ $(document).ready(function() {
                 '<div class="item-info">' +
                   '<h2>'+item.title+'</h2>' +
                   '<a class="modalButton" id="'+item.title+'">view more</a>' +
-                  '<a target="_blank" href="'+item.livelink+'">live</a>' +
+                  // '<a target="_blank" href="'+item.livelink+'">live</a>' +
                   '<h3>'+item.subtitle+'</h3></div>' +
                 '<img src="'+item.imgthumb+'"></div>');
     });
-    let owlDevelopment = $("#owl-development");
-    owlDevelopment.append(developments);
+    let $owlDevelopment = $("#owl-development");
+    $owlDevelopment.append(developments);
 
     // development owl carousel
-    owlDevelopment.owlCarousel(owlOptions);
+    $owlDevelopment.owlCarousel(owlOptions);
 
     //arrows controls
     $('.right-arrow-development').click(() => {
-      owlDevelopment.trigger('next.owl.carousel');
+      $owlDevelopment.trigger('next.owl.carousel');
     });
     $('.left-arrow-development').click(() => {
-      owlDevelopment.trigger('prev.owl.carousel', [300]);
+      $owlDevelopment.trigger('prev.owl.carousel', [300]);
     });
 
     setModal(data);
@@ -69,37 +69,37 @@ $(document).ready(function() {
 
   ////Modal/////
   const setModal = (data) => {
-    var modal = $('#myModal');
-    var modalButton = $(".modalButton");
-    var closeModalButton = $(".close-modal");
+    var $modal = $('#myModal');
+    var $modalButton = $(".modalButton");
+    var $closeModalButton = $(".close-modal");
     var showModal= false;
 
-    modalButton.click(function(e) {
-        setTimeout(function(){modal.addClass('show-modal')}, 0);
-        $('.body-wrapper').addClass('scale-body-wrapper');
-        $('body').addClass('no-scroll');
-        showModal= true;
-        nav.removeClass('hidden');
+    //show modal
+
+    $modalButton.click(function(e) {
+      setTimeout(function(){$modal.addClass('show-modal')}, 0);
+      $('.body-wrapper').addClass('scale-body-wrapper');
+      $('body').addClass('no-scroll');
+      showModal= true;
+      $nav.removeClass('hidden');
       fillModal(e, data);
     });
 
-    $('.footer-link').click(function() {
-      closeModal();
-    });
-
-    closeModalButton.click(function() {
+    $closeModalButton.click(function() {
       closeModal();
     });
 
     function closeModal() {
-      modal.removeClass('show-modal');
+      $modal.removeClass('show-modal');
       setTimeout(function(){$('.body-wrapper').removeClass('scale-body-wrapper')}, 0);
       $('body').removeClass('no-scroll');
       showModal= false;
+      //modal scrolls back to top when closed
+      setTimeout(function(){$('#myModal').stop().animate({'scrollTop': 1,}, 10);}, 300)
     }
   }
 
-  ////Fill modal/////
+  ////Fill modal with data coming from the json file/////
 
   function fillModal(e, data){
     var modalData= data.developments.filter(function(item){
@@ -107,18 +107,19 @@ $(document).ready(function() {
         return item;
       }
     })
-    console.log(modalData);
     $('#work-header').html(modalData[0].title);
     $('.work-img').attr('src', modalData[0].imgsmall).css('backgroundColor', modalData[0].themecolour);
     $('.work-img2').attr('src', modalData[0].imgbig);
     $('.modal-light-section').css('backgroundColor', modalData[0].themecolour);
     $('.work-description').html(modalData[0].description);
+    $('.live-button').attr('href', modalData[0].livelink);
+    $('.github-button').attr('href', modalData[0].gitlink);
   }
 
   ////Mobile version menu/////
 
-  var burger= $('#burger');
-  burger.click(toggleMenu)
+  var $burger= $('#burger');
+  $burger.click(toggleMenu)
 
   function toggleMenu() {
     $('body').toggleClass('no-scroll');
@@ -135,15 +136,15 @@ $(document).ready(function() {
       $('body, html').stop().animate({
         scrollTop: target[0].offsetTop
       }, 900, function (){
-        nav.removeClass('hidden');
+        $nav.removeClass('hidden');
       });
     }
   });
 
   // Close modal if clicked on overlayer///
   $(window).click((e) => {
-    let target = $(e.target);
-    if(target.parents().hasClass('menu-overlayer') || target.hasClass('menu-overlayer')){
+    let $target = $(e.target);
+    if($target.parents().hasClass('menu-overlayer') || $target.hasClass('menu-overlayer')){
       toggleMenu();
     }
   });
@@ -152,7 +153,7 @@ $(document).ready(function() {
   var ctxA = document.getElementById("chart");
 
   var data = {
-    labels: ["JAVASCRIPT", "CSS3", "HTML5", "SASS","BOOSTRAP", "GITHUB", "JQUERY"],
+    labels: ["JAVASCRIPT", "CSS3/SASS", "HTML5", "NODEJS","BOOSTRAP", "GITHUB", "JQUERY"],
     datasets: [
       {
         backgroundColor: 'rgba(254, 230, 76, 0.7)',
@@ -162,7 +163,7 @@ $(document).ready(function() {
         pointBackgroundColor: 'white',
         pointBorderWidth:1,
         pointHoverBorderWidth:1,
-        data: [7, 8.5, 8.5, 7.5, 7, 6, 7]
+        data: [7, 8.5, 8.5, 5, 7, 6, 7]
       }
     ]
   };
