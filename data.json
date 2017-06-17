@@ -8,7 +8,7 @@
       "gitlink":"https://github.com/Annolu/Creative",
       "livelink":"https://annolu.github.io/Creative/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Bootstrap Templates",
+      "description": "One page responsive website template, built with HTML5, JavaScript, JQuery and Sass. Design inspired by Bootstrap Templates.",
       "themecolour": "#F05F40"
     },
     {
@@ -19,7 +19,7 @@
       "gitlink":"https://github.com/Annolu/Comics-Shelves",
       "livelink":"https://annolu.github.io/Comics-Shelves/",
       "subtitle": "JS, HTML5, SASS, JQUERY, AJAX, MARVEL API",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
+      "description": "Marvel Comics showcase, built with HTML5, JavaScript, JQuery, Sass, AJAX and Marvel API.",
       "themecolour": "rgba(250, 0, 0, 0.7)"
     },
     {
@@ -30,7 +30,7 @@
       "gitlink":"https://github.com/Annolu/Mighty-Muffin",
       "livelink":"https://annolu.github.io/Mighty-Muffin/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP, AJAX",
-      "description": "Responsive dashboard, built with HTML5, JavaScript, Jquery, Sass and AJAX.",
+      "description": "Responsive dashboard showing the sales of a fictitious company, built with HTML5, JavaScript, JQuery, Sass and AJAX.",
       "themecolour": "#044c62"
     },
     {
@@ -41,7 +41,7 @@
       "gitlink":"https://github.com/Annolu/Sedna",
       "livelink":"https://annolu.github.io/Sedna/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "description": "One page responsive website template, built with HTML5, JavaScript, JQuery and Sass. Design inspired by Codrops templates.",
       "themecolour": "#FF5274"
     },
     {
@@ -52,8 +52,8 @@
       "gitlink":"https://github.com/Annolu/WederApp-design",
       "livelink":"https://weder-app.herokuapp.com/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive app, built with HTML5, JavaScript, Jquery and Sass. Design by Oburu",
-      "themecolour": "#f2f2f2"
+      "description": "One page responsive app, built with HTML5, JavaScript, JQuery and Sass. Design and back end by <a href='https://oburu.github.io/portofolio2.0/' target='_blank'>Oburu<a>.",
+      "themecolour": "#75B3F5"
     },
     {
       "title": "Cristy",
@@ -63,19 +63,19 @@
       "gitlink":"https://github.com/Annolu/Cristy-Website",
       "livelink":"https://annolu.github.io/Cristy-Website/",
       "subtitle": "JS, HTML5, SASS, JQUERY",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
+      "description": "One page responsive website template, built with HTML5, JavaScript, JQuery and Sass. Design inspired by Behance.",
       "themecolour": "#4bb899"
     },
     {
       "title": "Rebus",
-      "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
-      "imgsmall": "images/projects/project-5.jpg",
-      "imgbig": "project-2",
+      "imgthumb": "images/modal-img/portfolio-concept/portfolio-thumb.jpg",
+      "imgsmall": "images/modal-img/portfolio-concept/portfolio-top.png",
+      "imgbig": "images/modal-img/portfolio-concept/portfolio-big.png",
       "gitlink":"https://github.com/Annolu/Portfolio",
       "livelink":"",
       "subtitle": "JS, HTML5, JQUERY, SASS",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
-      "themecolour": "#4bb899"
+      "description": "One page responsive portfolio template, built with HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/portofolio2.0/' target='_blank'>Oburu<a>.",
+      "themecolour": "#8F86DD"
     },
     {
       "title": "SkinnyFlakk",
@@ -85,8 +85,8 @@
       "gitlink":"https://github.com/Annolu/Skinny-Flakk",
       "livelink":"http://www.skinnyflakk.com/",
       "subtitle": "WORDPRESS, JS, HTML5, CSS, JQUERY",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Jquery and Sass. Design inspired by Codrops",
-      "themecolour": "#ddd"
+      "description": "Webpage for Spanish artist Rels b, built with Wordpress, HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/portofolio2.0/' target='_blank'>Oburu<a>.",
+      "themecolour": "#aaa"
     }
   ]
 }

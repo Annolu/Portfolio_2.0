@@ -107,7 +107,7 @@ $(document).ready(function() {
         return item;
       }
     })
-    $('#work-header').html(modalData[0].title);
+    $('.work-title').html(modalData[0].title);
     $('.work-img').attr('src', modalData[0].imgsmall).css('backgroundColor', modalData[0].themecolour);
     $('.work-img2').attr('src', modalData[0].imgbig);
     $('.modal-light-section').css('backgroundColor', modalData[0].themecolour);
@@ -156,9 +156,9 @@ $(document).ready(function() {
     labels: ["JAVASCRIPT", "CSS3/SASS", "HTML5", "NODEJS","BOOSTRAP", "GITHUB", "JQUERY"],
     datasets: [
       {
-        backgroundColor: 'rgba(254, 230, 76, 0.7)',
-        borderColor:'rgba(254, 230, 76, 1)',
-        borderWidth: 1,
+        backgroundColor: 'rgba(108, 219, 219, .7)',
+        borderColor:'rgba(108, 219, 219, 1)',
+        borderWidth: 2,
         lineTension:.1,
         pointBackgroundColor: 'white',
         pointBorderWidth:1,
