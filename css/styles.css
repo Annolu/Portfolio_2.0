@@ -55,7 +55,7 @@ p {
 .central-panel {
   width: 70%;
   margin: 0 auto;
-  padding: 45px 0 0 0; }
+  padding: 5% 0 0 0; }
 
 .loader-overlayer {
   position: fixed;
@@ -444,7 +444,8 @@ p {
     letter-spacing: 0.15em;
     font-weight: 300; }
     .experience-section .lean-paragraph.date {
-      color: black; }
+      color: black;
+      text-transform: lowercase; }
   .experience-section .bold-paragraph {
     font-weight: 400;
     margin: 0 0 5px 0;
@@ -462,6 +463,10 @@ p {
       transition: all 200ms ease; }
       .contact-section .copyright .oburu-link:hover {
         color: rgba(255, 255, 255, 0.6); }
+    .contact-section .copyright .designed-by {
+      white-space: nowrap;
+      margin-top: 10px;
+      display: inline-block; }
   .contact-section p {
     font-weight: 400;
     font-size: .8rem; }
@@ -474,26 +479,28 @@ p {
     font-weight: 300; }
   .contact-section .social-media {
     margin: 30px 0 70px 0; }
-    .contact-section .social-media li {
-      display: inline-block; }
-    .contact-section .social-media .social-icons {
-      width: 30px;
-      height: 30px;
-      margin: 0 20px 0 0;
-      display: block;
-      transition: all 300ms ease;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      .contact-section .social-media .social-icons:hover {
-        transform: translateY(-8px); }
-    .contact-section .social-media .twitter {
-      background-image: url("../images/social-icons/twitter-logo.svg"); }
-    .contact-section .social-media .github {
-      background-image: url("../images/social-icons/github-logo.svg");
-      width: 28px;
-      height: 28px; }
-    .contact-section .social-media .linkedin {
-      background-image: url("../images/social-icons/linkedin-logo.svg"); }
+  .contact-section li {
+    display: inline-block; }
+  .contact-section .social-icons {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+    display: block;
+    transition: all 300ms ease;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .contact-section .social-icons:hover {
+      transform: translateY(-8px); }
+  .contact-section .twitter {
+    background-image: url("../images/social-icons/twitter-logo.svg"); }
+  .contact-section .github {
+    background-image: url("../images/social-icons/github-logo.svg");
+    width: 28px;
+    height: 28px; }
+  .contact-section .linkedin {
+    background-image: url("../images/social-icons/linkedin-logo.svg"); }
+  .contact-section .pdf {
+    background-image: url("../images/social-icons/pdf-logo.svg"); }
 
 .arrow {
   height: 70px;
@@ -582,6 +589,10 @@ p {
   .bold-paragraph {
     font-size: .8rem; } }
 @media only screen and (max-width: 665px) {
+  .central-panel {
+    width: 90%;
+    padding-top: 10%; }
+
   .modal-wrapper .work-img2 {
     width: 80%; }
   .modal-wrapper .work-title {
@@ -608,13 +619,10 @@ p {
   .splash-page .splash-page-content {
     padding: 50px 5%; }
     .splash-page .splash-page-content .title {
-      font-size: 34px;
+      font-size: 28px;
       line-height: 50px; }
   .splash-page .splash-page-footer {
     padding-left: 5%; }
-
-  .central-panel {
-    width: 90%; }
 
   .burger-container {
     opacity: .7;
@@ -634,8 +642,9 @@ p {
   .body-wrapper.scale-body-wrapper {
     transform: scale(0.9); }
 
-  .contact-section
-  .email {
+  .contact-section .social-icons:hover {
+    transform: none; }
+  .contact-section .email {
     font-size: 19px; } }
 
 /*# sourceMappingURL=styles.css.map */

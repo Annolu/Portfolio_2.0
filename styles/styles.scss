@@ -1,4 +1,4 @@
-$main-colour : #1b1b2d;
+$main-colour : rgba(27, 27, 45, 1);
 $font-light-muted: rgba(255, 255, 255, 0.6);
 
 html, body{
@@ -68,7 +68,7 @@ p{
 .central-panel{
   width: 70%;
   margin: 0 auto;
-  padding: 45px 0 0 0;
+  padding: 5% 0 0 0;
 }
 
 .loader-overlayer{
@@ -491,14 +491,7 @@ p{
   position: relative;
   color: white;
   padding-bottom: 40px;
-  background: rgba(27, 27, 45, 1);
-  // background: -moz-linear-gradient(top, rgba(27, 27, 45, 1)   0%, #6e4ada   100%);
-  // background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(27, 27, 45, 1)  ), color-stop(100%, #6e4ada  ));
-  // background: -webkit-linear-gradient(top, rgba(27, 27, 45, 1)   0%, #6e4ada   100%);
-  // background: -o-linear-gradient(top, rgba(27, 27, 45, 1)   0%, #6e4ada   100%);
-  // background: -ms-linear-gradient(top, rgba(27, 27, 45, 1)   0%, #6e4ada   100%);
-  // background: linear-gradient(to bottom, rgba(27, 27, 45, 1)   0%, #6e4ada   100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(27, 27, 45, 1)', endColorstr='#6e4ada', GradientType=0 );
+  background: $main-colour;
 }
 
 .experience-section{
@@ -541,6 +534,7 @@ p{
     font-weight: 300;
     &.date{
       color:rgba(0,0,0,1);
+      text-transform: lowercase;
     }
   }
   .bold-paragraph{
@@ -553,14 +547,7 @@ p{
 
 .contact-section{
   position: relative;
-  background: rgba(27, 27, 45, 1);
-  // background: -moz-linear-gradient(top, #333333   0%, #201f1f   100%);
-  // background: -webkit-gradient(left top, left bottom, color-stop(0%, #333333  ), color-stop(100%, #201f1f  ));
-  // background: -webkit-linear-gradient(top, #333333   0%, #201f1f   100%);
-  // background: -o-linear-gradient(top, #333333   0%, #201f1f   100%);
-  // background: -ms-linear-gradient(top, #333333   0%, #201f1f   100%);
-  // background: linear-gradient(to bottom, #333333   0%, #201f1f   100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#201f1f', GradientType=0 );
+  background: $main-colour;
   padding-bottom: 40px;
   .copyright{
     color: $font-light-muted;
@@ -570,6 +557,11 @@ p{
       &:hover{
         color: $font-light-muted;
       }
+    }
+    .designed-by{
+      white-space: nowrap;
+      margin-top: 10px;
+      display: inline-block;
     }
   }
   p{
@@ -586,32 +578,35 @@ p{
   }
   .social-media{
     margin: 30px 0 70px 0;
-    li{
-      display: inline-block;
+  }
+  li{
+    display: inline-block;
+  }
+  .social-icons{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 0;
+    display: block;
+    transition: all 300ms ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover{
+      transform: translateY(-8px);
     }
-    .social-icons{
-      width: 30px;
-      height: 30px;
-      margin: 0 20px 0 0;
-      display: block;
-      transition: all 300ms ease;
-      background-size: contain;
-      background-repeat: no-repeat;
-      &:hover{
-        transform: translateY(-8px);
-      }
-    }
-    .twitter{
-      background-image: url('../images/social-icons/twitter-logo.svg');
-    }
-    .github{
-      background-image: url('../images/social-icons/github-logo.svg');
-      width: 28px;
-      height: 28px;
-    }
-    .linkedin{
-      background-image: url('../images/social-icons/linkedin-logo.svg');
-    }
+  }
+  .twitter{
+    background-image: url('../images/social-icons/twitter-logo.svg');
+  }
+  .github{
+    background-image: url('../images/social-icons/github-logo.svg');
+    width: 28px;
+    height: 28px;
+  }
+  .linkedin{
+    background-image: url('../images/social-icons/linkedin-logo.svg');
+  }
+  .pdf{
+    background-image: url('../images/social-icons/pdf-logo.svg');
   }
 }
 
@@ -687,7 +682,7 @@ p{
     transition: all .2s ease-in-out;
     text-decoration: none;
     &:hover {
-      color: rgba(27, 27, 45, 1);
+      color: $main-colour;
       background-color: #fff;
       text-decoration: none;
       -webkit-transition: all .2s ease-in-out;
@@ -726,6 +721,11 @@ p{
 
 @media only screen and (max-width: 665px) {
 
+  .central-panel {
+    width:90%;
+    padding-top: 10%;
+  }
+
   .modal-wrapper{
     .work-img2{
       width: 80%;
@@ -760,7 +760,7 @@ p{
     .splash-page-content{
       padding:50px 5%;
       .title{
-        font-size: 34px;
+        font-size: 28px;
         line-height: 50px;
       }
     }
@@ -769,9 +769,6 @@ p{
     }
   }
 
-  .central-panel {
-    width:90%;
-  }
   .burger-container{
     opacity: .7;
     visibility: visible;
@@ -798,8 +795,15 @@ p{
       transform: scale(.9);
     }
   }
-  .contact-section
-  .email{
-    font-size: 19px;
+
+  .contact-section{
+    .social-icons{
+      &:hover{
+        transform: none;
+      }
+    }
+    .email{
+      font-size: 19px;
+    }
   }
 }

@@ -52,7 +52,7 @@
       "gitlink":"https://github.com/Annolu/WederApp-design",
       "livelink":"https://weder-app.herokuapp.com/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive app, built with HTML5, JavaScript, JQuery and Sass. Design and back end by <a href='https://oburu.github.io/portofolio2.0/' target='_blank'>Oburu<a>.",
+      "description": "One page responsive app, built with HTML5, JavaScript, JQuery and Sass. Design and back end by <a href='https://oburu.github.io/augusto/' target='_blank'>Oburu<a>.",
       "themecolour": "#75B3F5"
     },
     {
@@ -60,21 +60,21 @@
       "imgthumb": "images/modal-img/cristy/cristy-thumb.jpg",
       "imgsmall": "images/modal-img/cristy/cristy-top.png",
       "imgbig": "images/modal-img/cristy/cristy-big.png",
-      "gitlink":"https://github.com/Annolu/Cristy-Website",
-      "livelink":"https://annolu.github.io/Cristy-Website/",
+      "gitlink":"https://github.com/Annolu/Cristy",
+      "livelink":"https://annolu.github.io/Cristy/",
       "subtitle": "JS, HTML5, SASS, JQUERY",
       "description": "One page responsive website template, built with HTML5, JavaScript, JQuery and Sass. Design inspired by Behance.",
       "themecolour": "#4bb899"
     },
     {
-      "title": "Rebus",
+      "title": "Portfolio-concept",
       "imgthumb": "images/modal-img/portfolio-concept/portfolio-thumb.jpg",
       "imgsmall": "images/modal-img/portfolio-concept/portfolio-top.png",
       "imgbig": "images/modal-img/portfolio-concept/portfolio-big.png",
-      "gitlink":"https://github.com/Annolu/Portfolio",
-      "livelink":"",
+      "gitlink":"https://github.com/Annolu/Portfolio-concept",
+      "livelink":"https://annolu.github.io/Portfolio-concept/",
       "subtitle": "JS, HTML5, JQUERY, SASS",
-      "description": "One page responsive portfolio template, built with HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/portofolio2.0/' target='_blank'>Oburu<a>.",
+      "description": "One page responsive portfolio template, built with HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/augusto/' target='_blank'>Oburu<a>.",
       "themecolour": "#8F86DD"
     },
     {
@@ -85,7 +85,7 @@
       "gitlink":"https://github.com/Annolu/Skinny-Flakk",
       "livelink":"http://www.skinnyflakk.com/",
       "subtitle": "WORDPRESS, JS, HTML5, CSS, JQUERY",
-      "description": "Webpage for Spanish artist Rels b, built with Wordpress, HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/portofolio2.0/' target='_blank'>Oburu<a>.",
+      "description": "Webpage for Spanish artist Rels b, built with Wordpress, HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/augusto/' target='_blank'>Oburu<a>.",
       "themecolour": "#aaa"
     }
   ]
