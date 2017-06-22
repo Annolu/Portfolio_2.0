@@ -69,7 +69,7 @@ $(document).ready(function() {
     $('.body-wrapper').css('position', 'relative');
   });
 
-  //Preload all top images for the modal yo!
+  //Preload all top images for the modal
   const preloadImages = (data) => {
     data.forEach((item) => {
       $('<img />').attr('src',item.imgtop).appendTo('body').css('display','none');
@@ -87,7 +87,7 @@ $(document).ready(function() {
     //show modal
 
     $modalButton.click(function(e) {
-      setTimeout(function(){$modal.addClass('show-modal')}, 0);
+      setTimeout(function(){$modal.addClass('show-modal')}, 200);
       $('.body-wrapper').addClass('scale-body-wrapper');
       $('body').addClass('no-scroll');
       showModal= true;
@@ -118,8 +118,9 @@ $(document).ready(function() {
       }
     })
     $('.work-title').html(modalData[0].title);
-    $('.work-img').attr('src', modalData[0].imgsmall).css('backgroundColor', modalData[0].themecolour);
-    $('.work-img2').attr('src', modalData[0].imgbig);
+    $('.modal-img-wrapper').html("<img class='work-img' src="+ modalData[0].imgsmall +"></img>")
+    $('.work-img').css('backgroundColor', modalData[0].themecolour);
+    $('.modal-light-section').html("<img class='work-img2' src="+ modalData[0].imgbig +"></img>")
     $('.modal-light-section').css('backgroundColor', modalData[0].themecolour);
     $('.work-description').html(modalData[0].description);
     $('.live-button').attr('href', modalData[0].livelink);
