@@ -57,6 +57,8 @@ $(document).ready(function() {
       $owlDevelopment.trigger('prev.owl.carousel', [300]);
     });
 
+
+    preloadImages(data.developments)
     setModal(data);
   }
 
@@ -66,6 +68,14 @@ $(document).ready(function() {
     hideLoader();
     $('.body-wrapper').css('position', 'relative');
   });
+
+  //Preload all top images for the modal yo!
+  const preloadImages = (data) => {
+    data.forEach((item) => {
+      $('<img />').attr('src',item.imgtop).appendTo('body').css('display','none');
+      $('<img />').attr('src',item.imgbig).appendTo('body').css('display','none');
+    });
+  }
 
   ////Modal/////
   const setModal = (data) => {
