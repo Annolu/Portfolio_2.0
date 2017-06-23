@@ -130,7 +130,7 @@ $(document).ready(function() {
   ////Mobile version menu/////
 
   var $burger= $('#burger');
-  $burger.click(toggleMenu)
+  $burger.click(toggleMenu);
 
   function toggleMenu() {
     $('body').toggleClass('no-scroll');
