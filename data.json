@@ -30,7 +30,7 @@
       "gitlink":"https://github.com/Annolu/Mighty-Muffin",
       "livelink":"https://annolu.github.io/Mighty-Muffin/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP, AJAX",
-      "description": "Responsive dashboard showing the sales of a fictitious company, built with HTML5, JavaScript, JQuery, Sass and AJAX.",
+      "description": "Responsive dashboard showing the sales of a fictitious company in LA, built with HTML5, JavaScript, JQuery, Sass and AJAX.",
       "themecolour": "#044c62"
     },
     {
@@ -52,7 +52,7 @@
       "gitlink":"https://github.com/Annolu/WederApp-design",
       "livelink":"https://weder-app.herokuapp.com/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive app, built with HTML5, JavaScript, JQuery and Sass. Design and back end by <a href='https://oburu.github.io/augusto/' target='_blank'>Oburu<a>.",
+      "description": "One page responsive app, built with HTML5, JavaScript, JQuery and Sass. Design and React by <a href='https://oburu.github.io/augusto/' target='_blank'>Augusto Solorzano<a>.",
       "themecolour": "#75B3F5"
     },
     {
@@ -74,7 +74,7 @@
       "gitlink":"https://github.com/Annolu/Portfolio-concept",
       "livelink":"https://annolu.github.io/Portfolio-concept/",
       "subtitle": "JS, HTML5, JQUERY, SASS",
-      "description": "One page responsive portfolio template, built with HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/augusto/' target='_blank'>Oburu<a>.",
+      "description": "One page responsive portfolio template, built with HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/augusto/' target='_blank'>Augusto Solorzano<a>.",
       "themecolour": "#8F86DD"
     },
     {
@@ -85,8 +85,8 @@
       "gitlink":"https://github.com/Annolu/Skinny-Flakk",
       "livelink":"http://www.skinnyflakk.com/",
       "subtitle": "WORDPRESS, JS, HTML5, CSS, JQUERY",
-      "description": "Webpage for Spanish artist Rels b, built with Wordpress, HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/augusto/' target='_blank'>Oburu<a>.",
-      "themecolour": "#aaa"
+      "description": "Webpage for Spanish artist Rels b, built with Wordpress, HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://oburu.github.io/augusto/' target='_blank'>Augusto Solorzano<a>.",
+      "themecolour": "#999"
     }
   ]
 }

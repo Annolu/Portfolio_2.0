@@ -60,7 +60,6 @@ p{
   margin: 0;
 }
 
-
 .no-scroll{
   overflow: hidden;
 }
@@ -757,7 +756,7 @@ p{
     }
     .work-description{
       color: $font-light-muted;
-      padding: 40px;
+      padding: 40px 40px 0px 40px;
       line-height: 20px;
       font-size: .8rem;
     }

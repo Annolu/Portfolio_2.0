@@ -616,7 +616,7 @@ p {
     padding: 25% 0; }
   .modal-wrapper .work-description {
     color: rgba(255, 255, 255, 0.6);
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     line-height: 20px;
     font-size: .8rem; }
   .modal-wrapper .footer-link {
