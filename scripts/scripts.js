@@ -123,8 +123,18 @@ $(document).ready(function() {
     $('.modal-light-section').html("<img class='work-img2' src="+ modalData[0].imgbig +"></img>")
     $('.modal-light-section').css('backgroundColor', modalData[0].themecolour);
     $('.work-description').html(modalData[0].description);
-    $('.live-button').attr('href', modalData[0].livelink);
-    $('.github-button').attr('href', modalData[0].gitlink);
+    if(modalData[0].livelink){
+      $('.live-button').css("display", "inline-block");
+      $('.live-button').attr('href', modalData[0].livelink);
+    }else{
+      $('.live-button').css("display", "none");
+    }
+    if(modalData[0].gitlink){
+      $('.github-button').css("display", "inline-block");
+      $('.github-button').attr('href', modalData[0].gitlink);
+    }else{
+      $('.github-button').css("display", "none");
+    }
   }
 
   ////Mobile version menu/////
@@ -164,7 +174,7 @@ $(document).ready(function() {
   var ctxA = document.getElementById("chart");
 
   var data = {
-    labels: ["JAVASCRIPT", "CSS3/SASS", "HTML5", "NODEJS","BOOSTRAP", "GITHUB", "JQUERY"],
+    labels: ["JAVASCRIPT", "CSS3/SASS", "HTML5", "BOOTSTRAP", "WORDPRESS", "PHP", "GIT", "JQUERY"],
     datasets: [
       {
         backgroundColor: 'rgba(108, 219, 219, .7)',
@@ -174,7 +184,7 @@ $(document).ready(function() {
         pointBackgroundColor: 'white',
         pointBorderWidth:1,
         pointHoverBorderWidth:1,
-        data: [7, 8.5, 8.5, 5, 7, 6, 7]
+        data: [7, 8.5, 8.5, 7, 7, 6, 6, 7]
       }
     ]
   };

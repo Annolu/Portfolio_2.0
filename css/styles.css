@@ -445,7 +445,7 @@ p {
     font-weight: 300; }
     .experience-section .lean-paragraph.date {
       color: black;
-      text-transform: lowercase; }
+    /*text-transform: lowercase;*/ }
   .experience-section .bold-paragraph {
     font-weight: 400;
     margin: 0 0 5px 0;

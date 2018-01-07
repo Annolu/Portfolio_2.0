@@ -1,6 +1,65 @@
 {
   "developments":[
     {
+      "title": "The Bay Horse Tavern",
+      "imgthumb": "images/modal-img/bht/bht-thumbnail.png",
+      "imgsmall": "images/modal-img/bht/bht-top.png",
+      "imgbig": "images/modal-img/bht/bht-bottom.png",
+      "livelink":"http://thebayhorsetavern.co.uk/",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY, BOOTSTRAP",
+      "description": "Creation and design of Wordpress website for The Bay Horse Tavern restaurant, built with Wordpress, HTML5, Sass, PHP, Javascript, jQuery, Bootstrap and Google Maps API.",
+      "themecolour": "#cb933f"
+    },
+    {
+      "title": "Cane & Grain",
+      "imgthumb": "images/modal-img/cane&grain/cane&grain-thumbnail.jpg",
+      "imgsmall": "images/modal-img/cane&grain/cane&grain-top.png",
+      "imgbig": "images/modal-img/cane&grain/cane&grain-bottom.png",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY, BOOTSTRAP",
+      "description": "Creation and design of Wordpress website for the Cane & Grain restaurant, built with Wordpress, HTML5, Sass, PHP, Javascript, jQuery, Bootstrap and Google Maps API. Website in UAT.",
+      "themecolour": "#009898"
+    },
+    {
+      "title": "SkinnyFlakk",
+      "imgthumb": "images/modal-img/skinnyflakk/skinny-thumb.jpg",
+      "imgsmall": "images/modal-img/skinnyflakk/skinny-top.png",
+      "imgbig": "images/modal-img/skinnyflakk/skinny-big.png",
+      "gitlink":"https://github.com/Annolu/Skinny-Flakk",
+      "livelink":"http://www.skinnyflakk.com/",
+      "subtitle": "WORDPRESS, JS, HTML5, CSS, JQUERY",
+      "description": "Website for Spanish artist Rels b, built with Wordpress, HTML5, Javascript, jQuery and Sass. Designed and built in collaboration with <a href='https://github.com/oburu' target='_blank'>Augusto Solorzano<a>.",
+      "themecolour": "#999"
+    },
+    {
+      "title": "Marlborough",
+      "imgthumb": "images/modal-img/marlborough/marlboro-thumbnail.jpg",
+      "imgsmall": "images/modal-img/marlborough/marlboro-top.png",
+      "imgbig": "images/modal-img/marlborough/marlboro-bottom.png",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY, BOOTSTRAP",
+      "description": "Collaboration to Wordpress websites network for Marlborough Ltd, built with Wordpress, HTML5, Sass, PHP, Javascript, jQuery and Bootstrap. Website in UAT.",
+      "themecolour": "#d2d2d2"
+    },
+    {
+      "title": "Message Canada",
+      "imgthumb": "images/modal-img/message-canada/canada-thumbnail.png",
+      "imgsmall": "images/modal-img/message-canada/canada-top.png",
+      "imgbig": "images/modal-img/message-canada/canada-bottom.png",
+      "livelink":"http://messagecanada.org/",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY",
+      "description": "Creation of Wordpress website for the Message Trust charity, built with Wordpress, HTML5, Sass, PHP, Javascript and jQuery.",
+      "themecolour": "#333"
+    },
+    {
+      "title": "Lensa Writes",
+      "imgthumb": "images/modal-img/lensawrites/lensa-thumbail.jpg",
+      "imgsmall": "images/modal-img/lensawrites/lensa-top.png",
+      "imgbig": "images/modal-img/lensawrites/lensa-bottom.png",
+      "livelink":"http://lensawrites.co.uk/",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY",
+      "description": "Collaboration to Wordpress website for Lensa Writes blog, built with Wordpress, HTML5, Sass, PHP, Javascript and jQuery.",
+      "themecolour": "#7e8d44"
+    },
+    {
       "title": "Creative",
       "imgthumb": "images/modal-img/creative/thumb-creative.jpg",
       "imgsmall": "images/modal-img/creative/top-creative.png",
@@ -8,7 +67,7 @@
       "gitlink":"https://github.com/Annolu/Creative",
       "livelink":"https://annolu.github.io/Creative/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive website template, built with HTML5, JavaScript, Sass, JQuery and Bootstrap. Design inspired by Bootstrap Templates.",
+      "description": "One page responsive website template, built with HTML5, Javascript, Sass, jQuery and Bootstrap. Design inspired by Bootstrap Templates.",
       "themecolour": "#F05F40"
     },
     {
@@ -19,7 +78,7 @@
       "gitlink":"https://github.com/Annolu/Comics-Shelves",
       "livelink":"https://annolu.github.io/Comics-Shelves/",
       "subtitle": "JS, HTML5, SASS, JQUERY, AJAX, MARVEL API",
-      "description": "Marvel Comics showcase, built with HTML5, JavaScript, JQuery, Sass, AJAX and Marvel API.",
+      "description": "Marvel Comics showcase, built with HTML5, Javascript, jQuery, Sass, AJAX and Marvel API.",
       "themecolour": "rgba(250, 0, 0, 0.7)"
     },
     {
@@ -30,7 +89,7 @@
       "gitlink":"https://github.com/Annolu/Mighty-Muffin",
       "livelink":"https://annolu.github.io/Mighty-Muffin/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP, AJAX",
-      "description": "Responsive dashboard showing the sales of a fictitious company in LA, built with HTML5, JavaScript, JQuery, Sass and AJAX.",
+      "description": "Responsive dashboard showing the sales of a fictitious company in LA, built with HTML5, Javascript, jQuery, Sass, AJAX and Google Maps API.",
       "themecolour": "#044c62"
     },
     {
@@ -41,7 +100,7 @@
       "gitlink":"https://github.com/Annolu/Sedna",
       "livelink":"https://annolu.github.io/Sedna/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive website template, built with HTML5, JavaScript, JQuery and Sass. Design inspired by Codrops templates.",
+      "description": "One page responsive website template, built with HTML5, Javascript, jQuery and Sass. Design inspired by Codrops templates.",
       "themecolour": "#FF5274"
     },
     {
@@ -52,7 +111,7 @@
       "gitlink":"https://github.com/Annolu/WederApp-design",
       "livelink":"https://weder-app.herokuapp.com/",
       "subtitle": "JS, HTML5, SASS, JQUERY, BOOTSTRAP",
-      "description": "One page responsive app, built with HTML5, JavaScript, JQuery and Sass. Design and React by <a href='https://github.com/oburu' target='_blank'>Augusto Solorzano<a>.",
+      "description": "One page responsive app, built with HTML5, Javascript, jQuery and Sass. Design and React by <a href='https://github.com/oburu' target='_blank'>Augusto Solorzano<a>.",
       "themecolour": "#75B3F5"
     },
     {
@@ -63,7 +122,7 @@
       "gitlink":"https://github.com/Annolu/Cristy",
       "livelink":"https://annolu.github.io/Cristy/",
       "subtitle": "JS, HTML5, SASS, JQUERY",
-      "description": "One page responsive website template, built with HTML5, JavaScript, JQuery and Sass. Design inspired by Behance.",
+      "description": "One page responsive website template, built with HTML5, Javascript, jQuery and Sass. Design inspired by Behance.",
       "themecolour": "#4bb899"
     },
     {
@@ -74,19 +133,18 @@
       "gitlink":"https://github.com/Annolu/Portfolio-concept",
       "livelink":"https://annolu.github.io/Portfolio-concept/",
       "subtitle": "JS, HTML5, JQUERY, SASS",
-      "description": "One page responsive portfolio template, built with HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://github.com/oburu' target='_blank'>Augusto Solorzano<a>.",
+      "description": "One page responsive portfolio template, built with HTML5, Javascript, jQuery and Sass. Designed and built in collaboration with <a href='https://github.com/oburu' target='_blank'>Augusto Solorzano<a>.",
       "themecolour": "#8F86DD"
     },
     {
-      "title": "SkinnyFlakk",
-      "imgthumb": "images/modal-img/skinnyflakk/skinny-thumb.jpg",
-      "imgsmall": "images/modal-img/skinnyflakk/skinny-top.png",
-      "imgbig": "images/modal-img/skinnyflakk/skinny-big.png",
-      "gitlink":"https://github.com/Annolu/Skinny-Flakk",
-      "livelink":"http://www.skinnyflakk.com/",
-      "subtitle": "WORDPRESS, JS, HTML5, CSS, JQUERY",
-      "description": "Webpage for Spanish artist Rels b, built with Wordpress, HTML5, JavaScript, JQuery and Sass. Designed and built in collaboration with <a href='https://github.com/oburu' target='_blank'>Augusto Solorzano<a>.",
-      "themecolour": "#999"
+      "title": "Crazy Pedro's Pizza Parlour",
+      "imgthumb": "images/modal-img/crazy-pedros/crazy-pedros-thumb.jpg",
+      "imgsmall": "images/modal-img/crazy-pedros/crazy-pedros-top.png",
+      "imgbig": "images/modal-img/crazy-pedros/crazy-pedros-bottom.png",
+      "livelink":"http://crazypedros.co.uk/",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY, BOOTSTRAP",
+      "description": "Creation and design of Wordpress website for Crazy Pedro's Pizza Parlour restaurants, built with Wordpress, HTML5, Sass, PHP, Javascript, jQuery, Bootstrap and Google Maps API.",
+      "themecolour": "#e3077b"
     }
   ]
 }
