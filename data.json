@@ -31,6 +31,15 @@
       "themecolour": "#999"
     },
     {
+      "title": "The Mec",
+      "imgthumb": "images/modal-img/mec/mec-thumbnail.jpg",
+      "imgsmall": "images/modal-img/mec/mec-top.png",
+      "imgbig": "images/modal-img/mec/mec-bottom.jpg",
+      "subtitle": "WORDPRESS, PHP, HTML5, SASS, JS, JQUERY, BOOTSTRAP",
+      "description": "Wordpress websites network for The Message Centre Enterprise, built with Wordpress, HTML5, Sass, PHP, Javascript, jQuery and Bootstrap. Website in UAT.",
+      "themecolour": "#333333"
+    },
+    {
       "title": "Marlborough",
       "imgthumb": "images/modal-img/marlborough/marlboro-thumbnail.jpg",
       "imgsmall": "images/modal-img/marlborough/marlboro-top.png",
